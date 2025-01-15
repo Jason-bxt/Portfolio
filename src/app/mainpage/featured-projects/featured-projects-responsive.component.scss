@@ -1,0 +1,372 @@
+.featured-projects {
+  @media (max-width: 880px) {
+    .project-grid {
+      .project-1-img-div {
+        width: 260px;
+        .striped-div {
+          top: -20px;
+          right: -15px;
+          height: 180px;
+        }
+        .project-img {
+          top: -40px;
+        }
+      }
+    }
+
+    .project-grid {
+      .project-2-img-div {
+        width: 260px;
+        .striped-div {
+          top: -85px;
+          right: -15px;
+          height: 180px;
+        }
+        .project-img {
+          top: -100px;
+        }
+      }
+    }
+
+    .project-grid {
+      .project-3-img-div {
+        width: 260px;
+        .striped-div {
+          top: -85px;
+          right: -15px;
+          height: 180px;
+        }
+        .project-img {
+          top: -100px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-grid {
+      .project-1-img-div {
+        display: none;
+      }
+    }
+
+    .project-grid {
+      .project-2-img-div {
+        display: none;
+      }
+    }
+
+    .project-grid {
+      .project-3-img-div {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1420px) { /* overlay  */
+  .featured-projects {
+    padding-right: 5%;
+    padding-left: 3%;
+    // position: relative;
+  }
+}
+@media (max-width: 1320px) { /* overlay  */
+  .featured-projects {
+    .overlay {
+      top: 140px;
+      height: 56vh;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .featured-projects {
+    background-color: #1c1c1c;
+    height: 68vh;
+    padding-right: 4%;
+    padding-left: 3%;
+
+    h5 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 56px;
+      margin: 0 0 20px 0;
+    }
+    .main-p {
+      width: 90%;
+      font-family: "karla";
+      font-size: 20px;
+      font-weight: 200;
+      color: white;
+      margin: 8px 0 8px 0;
+    }
+    div {
+      width: 65%;
+      h4 {
+        font-size: 24px;
+        margin-left: 40px;
+      }
+      .technologies {
+        width: 320px;
+        margin-right: 40px;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .overlay {
+      top: 148px;
+      height: 52vh;
+      padding:40px;
+      width: 86vw;
+        .left-side {
+          .nr {
+            font-size: 90px;
+          }
+          .project-name {
+            font-size: 70px;
+          }
+          h3 {
+            font-size: 26px;
+          }
+          .description {
+            font-size: 16px;
+            width: 90%;
+            margin:0px 0px 0px 8px;
+          }
+          .technologie-div {
+            flex-wrap: wrap;
+            .tech-div{
+              flex: 1 1 calc(26.33% - 10px);
+            }
+          }
+          .links{
+            display:flex;
+            margin:8px 0px 0px 0px;
+            width: 340px;
+      }
+    }
+        .right-side {
+          width: 50%;
+          height:100%;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          justify-content: space-between;
+          .close-button{
+            width:40px;
+            height:40px;
+            background-color: transparent;
+            border:none;
+          }
+          img {
+            width: 100%;
+          }
+          .button-div {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            p{
+              font-size: 18px;
+              font-family: "fira code";
+              font-weight: 400;
+              color:#3dcfb6;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+
+@media (max-width: 1180px) { /* overlay  */
+  .featured-projects {
+    padding-right: 4%;
+    padding-left: 3%;
+    h5 {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 56px;
+      margin: 0 0 20px 0;
+    }
+    .main-p {
+      width: 90%;
+      font-family: "karla";
+      font-size: 20px;
+      font-weight: 200;
+      color: white;
+      margin: 8px 0 8px 0;
+    }
+    div {
+      width: 65%;
+      h4 {
+        font-size: 24px;
+        margin-left: 40px;
+      }
+      .technologies {
+        width: 320px;
+        margin-right: 40px;
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .overlay {
+      top: 172px;
+      height: 52vh;
+      width: 86vw;
+      padding:40px;
+        .left-side {
+          .nr {
+            font-size: 90px;
+          }
+          .project-name {
+            font-size: 70px;
+          }
+          h3 {
+            font-size: 26px;
+          }
+          .description {
+            font-size: 16px;
+            width: 90%;
+            margin:0px 0px 0px 8px;
+          }
+          .technologie-div {
+            flex-wrap: wrap;
+            .tech-div{
+              flex: 1 1 calc(26.33% - 10px);
+            }
+          }
+          .links{
+            display:flex;
+            margin:8px 0px 0px 0px;
+            width: 340px;
+      }
+    }
+        .right-side {
+          width: 50%;
+          height:100%;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          justify-content: space-between;
+          .close-button{
+            width:40px;
+            height:40px;
+            background-color: transparent;
+            border:none;
+          }
+          img {
+            width: 100%;
+          }
+          .button-div {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            p{
+              font-size: 18px;
+              font-family: "fira code";
+              font-weight: 400;
+              color:#3dcfb6;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+  }
+}
+@media (max-width: 940px) {
+  
+  .featured-projects {
+    h5 {
+      font-size: 20px;
+    }
+    h3 {
+      font-size: 44px;
+    }
+    .main-p {
+      font-size: 16px;
+    }
+    div {
+      h4 {
+        font-size: 19px;
+        margin-left: 16px;
+      }
+      .technologies {
+        width: 280px;
+        margin-right: 16px;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    // .overlay {
+    //   top: 184px;
+    //   height: 42vh;
+    //   width: 76vw;
+    // }
+    .overlay {
+      top: 172px;
+        height: 52vh;
+        width: 86vw;
+        .left-side {
+          .nr {
+            font-size: 84px;
+          }
+          .project-name {
+            font-size: 68px;
+          }
+          h3 {
+            font-size: 22px;
+          }
+          .description {
+            font-size: 16px;
+            width: 90%;
+            margin:0px 0px 0px 0px;
+          }
+          .technologie-div {
+            flex-wrap: wrap;
+            .tech-div{
+              flex: 1 1 calc(26.33% - 10px);
+            }
+          }
+          .links{
+            display:flex;
+            margin:0px 0px 0px 0px;
+            width: 340px;
+      }
+    }
+        .right-side {
+          width: 50%;
+          height:100%;
+          display: flex;
+          flex-direction: column;
+          align-items: end;
+          justify-content: space-between;
+          .close-button{
+            width:40px;
+            height:40px;
+            background-color: transparent;
+            border:none;
+          }
+          img {
+            width: 100%;
+          }
+          .button-div {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            p{
+              font-size: 18px;
+              font-family: "fira code";
+              font-weight: 400;
+              color:#3dcfb6;
+              white-space: nowrap;
+            }
+          }
+        }
+    }
+  }
+  }

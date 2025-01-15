@@ -1,0 +1,146 @@
+.contact-me {
+  background-color: #1c1c1c;
+  height: 90vh;
+  display: flex;
+  padding-right: 5%;
+  padding-left: 5%;
+  align-items: center;
+  justify-content: space-between;
+  .left-side {
+    width: 50%;
+    h5 {
+      color: #3dcfb6;
+      font-family: "karla";
+      font-size: 28px;
+      font-weight: 500;
+      margin: 0 0 16px 0;
+    }
+    h3 {
+      font-family: "fira code";
+      font-size: 68px;
+      font-weight: 700;
+      color: #3dcfb6;
+      margin: 0 0 20px 0;
+    }
+    h4 {
+      font-family: "fira code";
+      font-size: 28px;
+      font-weight: 700;
+      color: #3dcfb6;
+      margin: 0 0 20px 0;
+    }
+    p {
+      width: 100%;
+      font-family: "karla";
+      font-size: 18px;
+      font-weight: 200;
+      color: white;
+      margin: 0;
+    }
+    div {
+      display: flex;
+      margin-top: 20px;
+      width: 460px;
+      .lets-talk {
+        color: #3dcfb6;
+        font-weight: 600;
+      }
+    }
+  }
+  .right-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    // margin-top:100px;
+
+    div {
+      border-top: solid 1px #3dcfb6;
+      border-bottom: solid 1px #3dcfb6;
+      display: flex;
+      flex-direction: column;
+      p {
+        color: #3dcfb6;
+        font-family: "fira code";
+        font-size: 24px;
+        font-weight: 400;
+        margin: 28px 0 0px 40px;
+      }
+      input {
+        margin-bottom: 0px;
+        background-color: transparent;
+        border: none;
+        height: 80px;
+        cursor: pointer;
+        &::placeholder {
+          padding-left: 40px;
+          font-family: "fira code";
+          font-size: 16px;
+          font-weight: 400;
+          color: #b8b8b8;
+        }
+      }
+    }
+    textarea {
+      margin-bottom: 0px;
+      background-color: transparent;
+      border: none;
+      height: 80px;
+      &::placeholder {
+        padding-left: 40px;
+        font-family: "fira code";
+        font-size: 16px;
+        font-weight: 400;
+        color: #b8b8b8;
+        padding-top: 20px;
+      }
+    }
+    .button {
+      color: white;
+      background-color: transparent;
+      font-size: 20px;
+      font-family: "Karla";
+      font-weight: 300;
+      border: solid 0.5px white;
+      border-radius: 40px;
+      padding: 16px 20px 16px 20px;
+      margin: 24px 0 12px 0;
+      cursor: pointer;
+      overflow: hidden;
+      align-self: center;
+    }
+    .check-box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: none;
+      gap: 8px;
+      position: relative;
+      .check-box-img {
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        left: 1px;
+        top: 30px;
+      }
+
+      .privacyPolicy {
+        width: 20px;
+        z-index: 1000;
+        opacity: 0;
+        background-color: transparent;
+      }
+      label {
+        font-size: 18px;
+        font-family: "Karla";
+        font-weight: 300;
+        color: white;
+        a {
+          text-decoration: none;
+          color: #3dcfb6;
+          cursor: pointer;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

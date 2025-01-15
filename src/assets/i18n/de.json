@@ -1,0 +1,66 @@
+{
+  "HEADER": {
+    "AboutMe": "Über mich",
+    "Skills": "Fähigkeiten",
+    "Projects": "Projekte"
+  },
+  "HOMEPAGE": {
+    "Title": "Frontend Entwickler",
+    "WorkButton": "meine Arbeit",
+    "ContactButton": "Kontaktiere mich",
+    "DiagonalBar":{
+      "InfoOne":"Wohnhaft in Hamburg",
+      "InfoTwo":"Umzugsbereit",
+      "InfoThree":"Offen für Arbeit",
+      "InfoFour":"Verfügbar für remote Arbeit",
+      "InfoFive":"Frontend Entwickler"
+    }
+  },
+  "ABOUT_ME": {
+    "Info": "Wer ich bin",
+    "Title": "Über mich",
+    "MainDescription": "Hallo, ich bin ein deutscher Frontend-Entwickler mit Sitz in Hamburg. Motiviert von den grenzenlosen Möglichkeiten, Software zu entwickeln und innovative Technologien zu schaffen. Meine Begeisterung brennt dafür, die Websites und Anwendungen zu visualisieren, an denen ich beteiligt sein könnte.",
+    "DescriptionOne": "Flexibel in Bezug auf Arbeitsumgebungen, ich bin offen für einen Umzug mit Unterstützung oder bevorzuge es, remote zu arbeiten.",
+    "DescriptionTwo": "Selbstverbesserung ist ein großer Teil meines Lebens, ich suche immer nach neuen Herausforderungen und Möglichkeiten zu lernen und zu wachsen.",
+    "DescriptionThree": "Eine Reise, in der Ideen Gestalt annehmen und Herausforderungen verborgene Möglichkeiten enthüllen – hier beginnt die Magie des Programmierens. Mit jeder Zeile, die ich schreibe, ist es meine Mission, die Kluft zwischen Vision und Realität zu überbrücken und Lösungen zu schaffen, die nicht nur funktionieren, sondern inspirieren und ermächtigen. Lass uns Herausforderungen in Chancen und Träume in digitale Meisterwerke verwandeln."
+  },
+  "SKILL_SET": {
+    "Info": "Technologien",
+    "Title": "Meine Fähigkeiten",
+    "Content": "Dies ist der Abschnitt über meine Fähigkeiten.",
+    "SecondTitle": "Brauchen Sie eine weitere Fähigkeit?",
+    "ContentTwo": "Fühlen Sie sich frei, mich zu kontaktieren. Ich freue mich darauf, mein vorheriges Wissen zu erweitern.",
+    "Button": "Lass uns reden"
+  },
+  "FEATURED_PROJECTS": {
+    "Info": "Portfolio",
+    "Title": "Ausgewählte Projekte",
+    "Description": "Entdecken Sie eine Auswahl meiner aktuellsten und bemerkenswertesten Projekte.",
+    "Overlay": {
+      "Title": "Worum geht es in diesem Projekt?",
+      "DescriptionOne": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+      "DescriptionTwo": "Jump-and-Run-Spiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen.",
+      "DescriptionThree": "Der Pokedex ist ein Index aller existierenden Pokémon. Er verwendet die offizielle Pokémon-API. Sie finden alle Details zu Ihrem Lieblings-Pokémon mit nur einem Klick.",
+      "Button": "Nächstes Projekt"
+    }
+  },
+  "CONTACT_ME": {
+    "Info": "Kontaktiere mich",
+    "Title": "Lass uns zusammenarbeiten",
+    "SecondTitle": "Hast du ein Problem zu lösen?",
+    "Description": "Kontaktiere mich über dieses Formular, ich bin daran interessiert, von dir zu hören, deine Ideen zu erfahren und mit meiner Arbeit zu deinem Projekt beizutragen.",
+    "DescriptionTwo": "Brauchst du einen Frontend-Entwickler?",
+    "DescriptionThree": "Lass uns reden!",
+    "Policy": "Ich akzeptiere die",
+    "PolicyTwo": "Datenschutzrichtlinie",
+    "Button": "Sag Hallo ;)",
+    "Contact": {
+      "InputOne": "Wie heißt du?",
+      "PlaceholderOne": "Dein Name kommt hier hin",
+      "InputTwo": "Wie lautet deine E-Mail?",
+      "PlaceholderTwo": "deine-email.com",
+      "InputThree": "Wie kann ich dir helfen?",
+      "PlaceholderThree": "Hallo Jason, ich interessiere mich für ..."
+    }
+  }
+}

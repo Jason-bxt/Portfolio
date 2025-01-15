@@ -1,0 +1,67 @@
+{
+  "HEADER": {
+    "AboutMe": "About Me",
+    "Skills": "Skills",
+    "Projects": "Projects"
+  },
+  "HOMEPAGE": {
+    "Title": "Frontend Developer",
+    "WorkButton": "Check my work",
+    "ContactButton": "Contact me",
+    "DiagonalBar":{
+      "InfoOne":"Based in Hamburg",
+      "InfoTwo":"Free to move",
+      "InfoThree":"Open to work",
+      "InfoFour":"Available for remote work",
+      "InfoFive":"Frontend Developer"
+    }
+  },
+  "ABOUT_ME": {
+    "Info": "Who I am",
+    "Title": "About Me",
+    "MainDescription": "Hi, I'm a german Frontend Developer based in Hamburg. Motivated by the limitless opportunities of bulding software and creating innovative Technologies. My ecitment burns by visualizing the websites and applications i could be part of.",
+    "DescriptionOne": "Flexibale in terms of working environments, Im open to re-locate with support or bevorzugt work Remotely",
+    "DescriptionTwo": "Self-improvement is a big part of my life, I am always looking for new challenges and opportunities to learn and grow",
+    "DescriptionThree": "A journey where ideas take shape and challenges unveil hidden opportunities—this is where the magic of programming begins. With every line I write, my mission is to bridge the gap between vision and reality, crafting solutions that don’t just work but inspire and empower. Let’s transform challenges into opportunities and dreams into digital masterpieces."
+  },
+  "SKILL_SET": {
+    "Info": "Technologies",
+    "Title": "My Skills",
+    "Content": "This is the skill set section.",
+    "SecondTitle": "You need",
+    "ThirdTitle": "another skill ?",
+    "ContentTwo": "Feel free to contact me. i look forward to expanding on my previous knowledge",
+    "Button": "Let's Talk"
+  },
+  "FEATURED_PROJECTS": {
+    "Info": "Portfolio",
+    "Title": "Featured Projects",
+    "Description": "Explore a selection of my most recent and notable projects.",
+    "Overlay": {
+      "Title": "What is this project about?",
+      "DescriptionOne": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "DescriptionTwo": "Jump and run game based on object-oriented approach. Help pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "DescriptionThree": "Pokedex is an index of all Pokemons existing. it uses the official Pokemon API. You will find all detail for your favorite Pokemon through one click",
+      "Button": "Next Project"
+    }
+  },
+  "CONTACT_ME": {
+    "Info": "Contact me",
+    "Title": "Let's work together",
+    "SecondTitle": "Got a problem to solve ?",
+    "Description": "Contact me through this form, i am interested in hearing from you, knowing your ideas and contributing to your project with my work.",
+    "DescriptionTwo": "Need a Frontend developer ?",
+    "DescriptionThree": "Let's talk!",
+    "Policy": "I agree to the",
+    "PolicyTwo": "Privacy Policy",
+    "Button": "Say Hello ;)",
+    "Contact": {
+      "InputOne": "What's your name ?",
+      "PlaceholderOne": "Your name goes here",
+      "InputTwo": "What's your email ?",
+      "PlaceholderTwo": "your-email.com",
+      "InputThree": "How can I help you ?",
+      "PlaceholderThree": "Hello Jason, I am intersted in ..."
+    }
+  }
+}

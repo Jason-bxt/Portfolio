@@ -1,0 +1,404 @@
+.featured-projects {
+  background-color: #1c1c1c;
+  height: 92vh;
+  padding-right: 5%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h5 {
+    color: #3dcfb6;
+    font-family: "karla";
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+  }
+  h3 {
+    font-family: "fira code";
+    font-size: 68px;
+    font-weight: 700;
+    color: #3dcfb6;
+    margin: 0 0 20px 0;
+  }
+  .main-p {
+    width: 90%;
+    font-family: "karla";
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    margin: 8px 0 8px 0;
+  }
+  .project-grid {
+    width: 100%;
+    display: flex;
+    .project-1 {
+      border-top: solid 1px #3dcfb6;
+      margin-top: 40px;
+
+      &:hover + .project-1-img-div {
+        opacity: 1;
+      }
+      &:hover {
+        background-color: #26524b;
+      }
+    }
+    .project-1-img-div {
+      width: 360px;
+      position: relative;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      .striped-div {
+        width: 100%;
+        height: 240px;
+        position: absolute;
+        top: 0px;
+        right: -30px;
+        background: repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 8px,
+          #3dcfb6 10px,
+          #3dcfb6 7px
+        );
+        border-radius: 20px;
+      }
+      .project-img {
+        width: 100%;
+        position: absolute;
+        top: -40px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .project-grid {
+    width: 100%;
+    display: flex;
+    .project-2 {
+      border-top: solid 1px #3dcfb6;
+
+      &:hover + .project-2-img-div {
+        opacity: 1;
+      }
+      &:hover {
+        background-color: #26524b;
+      }
+    }
+    .project-2-img-div {
+      width: 360px;
+      position: relative;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      .striped-div {
+        width: 100%;
+        height: 240px;
+        position: absolute;
+        top: -60px;
+        right: -30px;
+        background: repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 8px,
+          #3dcfb6 10px,
+          #3dcfb6 7px
+        );
+        border-radius: 20px;
+      }
+      .project-img {
+        width: 100%;
+        position: absolute;
+        top: -100px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .project-grid {
+    width: 100%;
+    display: flex;
+    .project-3 {
+      border-top: solid 1px #3dcfb6;
+      border-bottom: solid 1px #3dcfb6;
+
+      &:hover + .project-3-img-div {
+        opacity: 1;
+      }
+      &:hover {
+        background-color: #26524b;
+      }
+    }
+    .project-3-img-div {
+      width: 360px;
+      position: relative;
+      opacity: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      .striped-div {
+        width: 100%;
+        height: 240px;
+        position: absolute;
+        top: -140px;
+        right: -30px;
+        background: repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 8px,
+          #3dcfb6 10px,
+          #3dcfb6 7px
+        );
+        border-radius: 20px;
+      }
+      .project-img {
+        width: 100%;
+        position: absolute;
+        top: -180px;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    h4 {
+      font-family: "fira code";
+      font-size: 28px;
+      font-weight: 600;
+      color: white;
+      margin-left: 40px;
+    }
+    .technologies {
+      width: 400px;
+      margin-right: 40px;
+      p {
+        display: inline;
+        font-family: "karla";
+        font-size: 20px;
+        font-weight: 200;
+        color: white;
+        margin: 0;
+      }
+      .border {
+        height: 20px;
+        width: 1px;
+        background-color: #3dcfb6;
+      }
+    }
+  }
+
+  .overlay {
+    display:flex;
+    position: fixed;
+    top: 100px;
+    height: 60vh;
+    width: 80vw;
+    border: solid 1px #3dcfb6;
+    border-radius: 40px;
+    background: linear-gradient(to left, #08463b, #1c1c1c);
+    display: flex;
+    padding: 80px;
+    z-index: 1000;
+
+    .left-side {
+      width: 50%;
+      height:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      .nr {
+        font-size: 100px;
+        font-family: "fira code";
+        font-weight: 700;
+        color: #3dcfb6;
+      }
+      .project-name {
+        font-size: 80px;
+        font-family: "fira code";
+        font-weight: 700;
+        color: white;
+        margin: 0;
+      }
+      h3 {
+        font-size: 28px;
+        font-family: "fira code";
+        font-weight: 700;
+        color: #3dcfb6;
+      }
+      .description {
+        font-size: 20px;
+        font-family: "fira code";
+        font-weight: 300;
+        color: white;
+        width: 80%;
+      }
+      .technologie-div {
+        width:100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .technologie {
+          gap:4px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          .icon {
+            width: 32px;
+            height: 32px;
+          }
+          .technologie-name {
+            font-size: 16px;
+            font-family: "fira code";
+            font-weight: 400;
+            color: white;
+          }
+        }
+      }
+      .links{
+        display:flex;
+        margin:20px 0px 0px 0px;
+        width: 340px;
+      .link-button {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        height:28px;
+        width:120px;
+        color: white;
+        background-color: transparent;
+        font-size: 18px;
+        font-family: 'Karla';
+        font-weight: 300;
+        border: solid 0.5px white;
+        border-radius: 40px;
+        padding: 12px 12px;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative; 
+        white-space: nowrap;
+    }
+  }
+}
+    .right-side {
+      width: 50%;
+      height:100%;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: space-between;
+      .close-button{
+        width:40px;
+        height:40px;
+        background-color: transparent;
+        border:none;
+        cursor:pointer;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      .button-div {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        cursor:pointer;
+        p{
+          font-size: 18px;
+          font-family: "fira code";
+          font-weight: 400;
+          color:#3dcfb6;
+          white-space: nowrap;
+          
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1460px) {
+    .project-grid {
+      .project-1-img-div {
+        width: 300px;
+        .striped-div {
+          top: -25px;
+          right: -20px;
+          height: 220px;
+        }
+        .project-img {
+          top: -40px;
+        }
+      }
+    }
+
+    .project-grid {
+      .project-2-img-div {
+        width: 300px;
+        .striped-div {
+          top: -90px;
+          right: -20px;
+          height: 220px;
+        }
+        .project-img {
+          top: -100px;
+        }
+      }
+    }
+
+    .project-grid {
+      .project-3-img-div {
+        width: 300px;
+        .striped-div {
+          top: -90px;
+          right: -20px;
+          height: 220px;
+        }
+        .project-img {
+          top: -100px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 980px) {
+    .project-grid {
+      .project-1-img-div {
+        width: 280px;
+        .striped-div {
+          top: -25px;
+          right: -20px;
+          height: 200px;
+        }
+        .project-img {
+          top: -40px;
+        }
+      }
+    }
+
+    .project-grid {
+      .project-2-img-div {
+        width: 280px;
+        .striped-div {
+          top: -90px;
+          right: -20px;
+          height: 200px;
+        }
+        .project-img {
+          top: -100px;
+        }
+      }
+    }
+
+    .project-grid {
+      .project-3-img-div {
+        width: 280px;
+        .striped-div {
+          top: -90px;
+          right: -20px;
+          height: 200px;
+        }
+        .project-img {
+          top: -100px;
+        }
+      }
+    }
+  }
+
+  }
+  

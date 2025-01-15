@@ -1,0 +1,367 @@
+@media (max-width: 600px) {
+  .about-me{
+    .right-side {
+      width:83%;
+  
+      .about-me-div{
+          h3{
+            font-size:64px;
+          }
+          .main-p{
+            font-size:20px;
+            margin:20px 0 28px 0;
+          }
+          div{
+            p{
+            font-size:19px;
+              margin:0 0 28px 0;
+            }
+          }
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .about-me{
+    height:156vh;
+    .left-side {
+      height:50%;
+    
+      .striped-div {
+        width:100%;
+        height:72%;
+        position:absolute;
+        top:180px;
+        left:-20px;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 31px,
+          #3DCFB6 20px,
+          #3DCFB6 32px
+          );
+    }
+    
+        .profile-img{
+          width:100%;
+          height:72%;
+          object-fit: cover; 
+          border-radius:40px;
+          position:absolute;
+          top:160px;
+          right:0px;
+    
+        }
+     }
+    .right-side {
+      height:50%;
+      .about-me-div{
+        padding:32px;
+    
+          h3{
+            font-size:60px;
+          }
+          .main-p{
+            font-size:18px;
+            margin:16px 0 24px 0;
+          }
+          div{
+            .icon {
+              margin:0 20px 0 0;
+            }
+            p{
+            font-size:17px;
+              margin:0 0 20px 0;
+            }
+          }
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .about-me{
+    height:150vh;
+    .left-side {
+      height:46%;
+    
+      .striped-div {
+        width:100%;
+        height:72%;
+        position:absolute;
+        top:180px;
+        left:-20px;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 31px,
+          #3DCFB6 20px,
+          #3DCFB6 32px
+          );
+    }
+    
+        .profile-img{
+          width:100%;
+          height:72%;
+          object-fit: cover; 
+          border-radius:40px;
+          position:absolute;
+          top:160px;
+          right:0px;
+    
+        }
+     }
+    .right-side {
+      width:83%;
+      height:54%;
+  
+      .about-me-div{
+        padding:32px;
+        height: 80%;
+    
+          h3{
+            font-size:56px;
+          }
+  
+          .main-p{
+            font-size:17px;
+            margin:16px 0 24px 0;
+          }
+  
+          div{
+            .icon {
+              margin:0 20px 0 0;
+            }
+  
+            p{
+              width:90%;
+            font-size:15px;
+              margin:0 0 20px 0;
+            }
+          }
+      }
+    }
+  }
+}
+@media (max-width: 460px) {
+  .about-me{
+    height:142vh;
+    .left-side {
+      height:42%;
+    
+      .striped-div {
+        width:100%;
+        height:72%;
+        position:absolute;
+        top:180px;
+        left:-20px;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 31px,
+          #3DCFB6 20px,
+          #3DCFB6 32px
+          );
+    }
+    
+        .profile-img{
+          width:100%;
+          height:72%;
+          object-fit: cover; 
+          border-radius:40px;
+          position:absolute;
+          top:160px;
+          right:0px;
+    
+        }
+     }
+    .right-side {
+      width:82%;
+      height:58%;
+      
+  
+      .about-me-div{
+        padding:32px;
+        height: 74%;
+    
+          h3{
+            font-size:52px;
+          }
+  
+          .main-p{
+            font-size:16px;
+            margin:12px 0 20px 0;
+          }
+  
+          div{
+            .icon {
+              margin:0 20px 0 0;
+            }
+  
+            p{
+              width:90%;
+            font-size:14px;
+              margin:0 0 20px 0;
+            }
+          }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .about-me{
+    .right-side {
+
+      
+  
+      .about-me-div{
+        padding:32px;
+        height: 74%;
+        width:94%;
+    
+          h3{
+            font-size:44px;
+          }
+  
+          .main-p{
+            font-size:14px;
+            margin:12px 0 20px 0;
+          }
+  
+          div{
+            .icon {
+              width:32px;
+              height:32px;
+              margin:0 16px 0 0;
+            }
+  
+            p{
+              width:90%;
+            font-size:13px;
+              margin:0 0 16px 0;
+            }
+          }
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .about-me{
+    height:132vh;
+    .left-side {
+      height:38%;
+    
+      .striped-div {
+        width:100%;
+        height:72%;
+        position:absolute;
+        top:180px;
+        left:-20px;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 31px,
+          #3DCFB6 20px,
+          #3DCFB6 32px
+          );
+    }
+    
+        .profile-img{
+          width:100%;
+          height:72%;
+          object-fit: cover; 
+          border-radius:40px;
+          position:absolute;
+          top:160px;
+          right:0px;
+    
+        }
+     }
+    .right-side {
+      height:62%;
+      .about-me-div{
+        padding:32px;
+        height: 74%;
+        width:94%;
+    
+          h3{
+            font-size:44px;
+          }
+  
+          .main-p{
+            font-size:13px;
+            margin:8px 0 16px 0;
+          }
+  
+          div{
+            .icon {
+              width:32px;
+              height:32px;
+              margin:0 12px 0 0;
+            }
+  
+            p{
+              width:90%;
+            font-size:12px;
+              margin:0 0 12px 0;
+            }
+          }
+      }
+    }
+  }
+}
+@media (max-width: 340px) {
+  .about-me{
+    .right-side {
+      .about-me-div{
+        padding:28px;
+        height: 74%;
+
+          h3{
+            font-size:40px;
+          }
+  
+          .main-p{
+            font-size:13px;
+            margin:8px 0 16px 0;
+          }
+  
+          div{
+            .icon {
+              width:32px;
+              height:32px;
+              margin:0 12px 0 0;
+            }
+  
+            p{
+              width:90%;
+            font-size:12px;
+              margin:0 0 12px 0;
+            }
+          }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .about-me{
+    .right-side {
+      .about-me-div{
+        height: 68%;
+          h3{
+            font-size:36px;
+          }
+  
+          .main-p{
+            font-size:12px;
+            margin:8px 0 16px 0;
+          }
+  
+          div{
+            p{
+            font-size:11px; 
+            }
+          }
+      }
+    }
+  }
+}

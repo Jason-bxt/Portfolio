@@ -1,0 +1,316 @@
+.homepage{
+  background: linear-gradient(to left, #08463B,  #1C1C1C);
+  height:100vh;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+
+  h2{
+    font-family: 'Fira Code';
+    font-weight:400;
+    font-size:52px;
+    margin:0;
+    color:white;
+  }
+  h1{
+    font-size:160px;
+    margin:0;
+    color:white;
+    font-family: 'Karla';
+  }
+
+  .home-button-div {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    
+  
+    .button {
+      color: white;
+      background-color: transparent;
+      font-size: 20px;
+      width: 140px;
+      height: 28px;
+      font-family: 'Karla';
+      font-weight: 300;
+      border: solid 0.5px white;
+      border-radius: 40px;
+      padding: 16px 20px;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    
+      .button-text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        animation: none;
+        color:white;
+      }
+      &:hover {
+        border: solid 0.5px #3DCFB6; 
+      }
+    
+      &:hover .button-text {
+        animation: slide-text 2.5s linear infinite;
+        color:#3DCFB6;
+      }
+    }
+    
+@keyframes slide-text {
+  0% {
+    transform: translateX(0) translateY(-50%); // Start: Text ist sichtbar in der Mitte
+  }
+  25% {
+    transform: translateX(-150%) translateY(-50%); // Text slidet komplett nach links heraus
+  }
+  55% {
+    transform: translateX(-150%) translateY(-250%); // Text bewegt sich nach oben außerhalb des Buttons
+  }
+
+
+  65% {
+    transform: translateX(150%) translateY(-250%); // Text slidet von links nach rechts oben
+  }
+  75% {
+    transform: translateX(150%) translateY(-50%); // Text bewegt sich nach unten außerhalb des Buttons
+  }
+ 
+  100% {
+    transform: translateX(0) translateY(-50%); // Text slidet zurück in die Mitte
+  }
+}
+
+    
+    
+  }
+.left-links-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+  position:absolute;
+  bottom:0px;
+  left:120px;
+  div{
+    height:280px;
+    width:1px;
+    background-color:#3DCFB6;
+  }
+  .animated-arrow{
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Anfangs- und Endposition */
+    }
+    50% {
+      transform: translateY(-10px); /* Pfeil bewegt sich nach oben */
+    }
+  }
+}
+.right-links-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:20px;
+  position:absolute;
+  bottom:0px;
+  right:120px;
+  div{
+    height:280px;
+    width:1px;
+    background-color:white;
+  }
+}
+.diagonal-bar{
+  backdrop-filter: blur(2px);
+  background-color:rgba(255, 255, 255, 0.089);
+  position:absolute;
+  bottom:100px;
+  height:60px;
+  width:101%;
+  transform: rotate(-5deg);
+  .text-container{
+    display: flex; 
+    align-items: center;
+    height:100%;
+    width:100%;
+    animation: slide 10s linear infinite;
+  }
+  
+  p{
+    color:#3DCFB6;
+    font-family:'karla';
+    font-size:32px;
+    font-weight:400;
+    white-space: nowrap; 
+    padding: 0 24px;
+  }
+  .middle-dot{
+    font-weight:800;
+  }
+  @keyframes slide {
+    0% {
+        transform: translateX(8%); /* Start außerhalb des Bildschirms rechts */
+    }
+    100% {
+        transform: translateX(-100%); /* Ende außerhalb des Bildschirms links */
+    }
+  }
+}
+@media(max-width:1400px){
+  h2{
+    font-size:32px;
+  }
+  h1{
+    font-size:120px;
+  }
+  .right-links-div {
+    right:80px;
+  }
+  .left-links-div{
+    left:80px;
+  }
+}
+@media(max-width:1120px){
+  h2{
+    font-size:28px;
+  }
+  h1{
+    font-size:100px;
+  }
+  .right-links-div {
+    right:60px;
+  }
+  .left-links-div{
+    left:60px;
+  }
+}
+@media(max-width:940px){
+  h2{
+    font-size:28px;
+  }
+  h1{
+    font-size:88px;
+  }
+  .right-links-div {
+    right:40px;
+  }
+  .left-links-div{
+    left:40px;
+  }
+}
+@media(max-width:940px){
+  .right-links-div {
+    right:20px;
+  }
+  .left-links-div{
+    left:20px;
+  }
+}
+@media(max-width:768px){
+  .left-links-div{
+    div{
+      height:260px;
+    }
+  }
+  .right-links-div {
+    gap:8px;
+    div{
+      height:140px;
+      width:1px;
+      background-color:white;
+    }
+  }
+  .diagonal-bar{
+    bottom:40px;
+    }
+}
+@media(max-width:600px){
+  h1{
+    font-size:80px;
+  }
+}
+@media(max-width:520px){
+  h2{
+    font-size:24px;
+  }
+  h1{
+    font-size:72px;
+  }
+}
+@media(max-width:480px){
+  h2{
+    font-size:20px;
+  }
+  h1{
+    font-size:60px;
+  }
+  .home-button-div{
+    width:320px;
+  button{
+    font-size: 16px;
+  }
+}
+}
+@media(max-width:400px){
+  h2{
+    font-size:20px;
+  }
+  h1{
+    font-size:52px;
+  }
+  .home-button-div{
+    width:300px;
+  button{
+    font-size: 16px;
+  }
+}
+}
+@media(max-width:360px){
+  h2{
+    font-size:18px;
+  }
+  h1{
+    font-size:48px;
+  }
+  .home-button-div{
+    width:260px;
+  button{
+    font-size: 14px;
+  }
+}
+}
+@media(max-width:320px){
+  h2{
+    font-size:18px;
+  }
+  h1{
+    font-size:44px;
+  }
+
+}
+@media(max-width:300px){
+  h2{
+    font-size:16px;
+  }
+  h1{
+    font-size:40px;
+  }
+  .home-button-div{
+    width:240px;
+  button{
+    font-size: 12px;
+  }
+}
+}
+}
+
