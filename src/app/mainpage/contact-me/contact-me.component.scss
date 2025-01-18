@@ -1,13 +1,20 @@
-.contact-me {
+main {
+  display: flex;
+  justify-content: center;
   background-color: #1c1c1c;
+}
+.contact-me {
   height: 90vh;
   display: flex;
   padding-right: 5%;
   padding-left: 5%;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
   .left-side {
     width: 50%;
+    margin-bottom: 280px;
     h5 {
       color: #3dcfb6;
       font-family: "karla";
@@ -65,35 +72,34 @@
         font-weight: 400;
         margin: 28px 0 0px 40px;
       }
-      input {
+      input,
+      textarea {
         margin-bottom: 0px;
         background-color: transparent;
         border: none;
         height: 80px;
-        cursor: pointer;
+        cursor: text;
+        font-size: 20px;
+        color: #fff;
+        margin-left: 40px;
+
         &::placeholder {
-          padding-left: 40px;
           font-family: "fira code";
           font-size: 16px;
           font-weight: 400;
           color: #b8b8b8;
         }
+        &:focus {
+          border: none;
+          outline: none;
+        }
+      }
+      textarea {
+        margin-top: 30px;
+        height: 50px;
       }
     }
-    textarea {
-      margin-bottom: 0px;
-      background-color: transparent;
-      border: none;
-      height: 80px;
-      &::placeholder {
-        padding-left: 40px;
-        font-family: "fira code";
-        font-size: 16px;
-        font-weight: 400;
-        color: #b8b8b8;
-        padding-top: 20px;
-      }
-    }
+
     .button {
       color: white;
       background-color: transparent;

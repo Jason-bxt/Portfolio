@@ -1,11 +1,17 @@
-.featured-projects {
+main {
   background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+}
+.featured-projects {
   height: 92vh;
   padding-right: 5%;
   padding-left: 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  max-width: 1920px;
   h5 {
     color: #3dcfb6;
     font-family: "karla";
@@ -153,7 +159,6 @@
       }
     }
   }
-
   div {
     display: flex;
     justify-content: space-between;
@@ -184,9 +189,8 @@
       }
     }
   }
-
   .overlay {
-    display:flex;
+    display: flex;
     position: fixed;
     top: 100px;
     height: 60vh;
@@ -200,7 +204,7 @@
 
     .left-side {
       width: 50%;
-      height:100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: start;
@@ -231,12 +235,12 @@
         width: 80%;
       }
       .technologie-div {
-        width:100%;
+        width: 100%;
         display: flex;
         justify-content: start;
         align-items: center;
         .technologie {
-          gap:4px;
+          gap: 4px;
           display: flex;
           justify-content: start;
           align-items: center;
@@ -252,44 +256,44 @@
           }
         }
       }
-      .links{
-        display:flex;
-        margin:20px 0px 0px 0px;
+      .links {
+        display: flex;
+        margin: 20px 0px 0px 0px;
         width: 340px;
-      .link-button {
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        height:28px;
-        width:120px;
-        color: white;
-        background-color: transparent;
-        font-size: 18px;
-        font-family: 'Karla';
-        font-weight: 300;
-        border: solid 0.5px white;
-        border-radius: 40px;
-        padding: 12px 12px;
-        cursor: pointer;
-        overflow: hidden;
-        position: relative; 
-        white-space: nowrap;
+        .link-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 28px;
+          width: 120px;
+          color: white;
+          background-color: transparent;
+          font-size: 18px;
+          font-family: "Karla";
+          font-weight: 300;
+          border: solid 0.5px white;
+          border-radius: 40px;
+          padding: 12px 12px;
+          cursor: pointer;
+          overflow: hidden;
+          position: relative;
+          white-space: nowrap;
+        }
+      }
     }
-  }
-}
     .right-side {
       width: 50%;
-      height:100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: end;
       justify-content: space-between;
-      .close-button{
-        width:40px;
-        height:40px;
+      .close-button {
+        width: 40px;
+        height: 40px;
         background-color: transparent;
-        border:none;
-        cursor:pointer;
+        border: none;
+        cursor: pointer;
       }
       img {
         width: 100%;
@@ -299,19 +303,17 @@
         display: flex;
         justify-content: center;
         width: 200px;
-        cursor:pointer;
-        p{
+        cursor: pointer;
+        p {
           font-size: 18px;
           font-family: "fira code";
           font-weight: 400;
-          color:#3dcfb6;
+          color: #3dcfb6;
           white-space: nowrap;
-          
         }
       }
     }
   }
-
   @media (max-width: 1460px) {
     .project-grid {
       .project-1-img-div {
@@ -326,7 +328,6 @@
         }
       }
     }
-
     .project-grid {
       .project-2-img-div {
         width: 300px;
@@ -340,7 +341,6 @@
         }
       }
     }
-
     .project-grid {
       .project-3-img-div {
         width: 300px;
@@ -355,7 +355,6 @@
       }
     }
   }
-
   @media (max-width: 980px) {
     .project-grid {
       .project-1-img-div {
@@ -370,7 +369,6 @@
         }
       }
     }
-
     .project-grid {
       .project-2-img-div {
         width: 280px;
@@ -384,7 +382,6 @@
         }
       }
     }
-
     .project-grid {
       .project-3-img-div {
         width: 280px;
@@ -399,6 +396,4 @@
       }
     }
   }
-
-  }
-  
+}

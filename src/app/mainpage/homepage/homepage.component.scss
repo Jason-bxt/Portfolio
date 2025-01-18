@@ -1,11 +1,20 @@
-.homepage{
+main{
   background: linear-gradient(to left, #08463B,  #1C1C1C);
+  display:flex;
+  justify-content: center;
+}
+.homepage{
   height:100vh;
   width:100%;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content: center;
+  max-width:1920px;
+  position:relative;
+  a{
+    scroll-behavior: smooth;
+  }
 
   h2{
     font-family: 'Fira Code';
@@ -32,7 +41,7 @@
       color: white;
       background-color: transparent;
       font-size: 20px;
-      width: 140px;
+      width: 120px;
       height: 28px;
       font-family: 'Karla';
       font-weight: 300;
@@ -45,6 +54,7 @@
       display:flex;
       justify-content: center;
       align-items: center;
+      scroll-behavior: smooth;
     
       .button-text {
         position: absolute;
@@ -136,14 +146,16 @@
   position:absolute;
   bottom:100px;
   height:60px;
-  width:101%;
+  width:100%;
+  max-width:1920px;
   transform: rotate(-5deg);
+  overflow: hidden;
   .text-container{
     display: flex; 
     align-items: center;
     height:100%;
     width:100%;
-    animation: slide 10s linear infinite;
+    animation: slide 6s linear infinite;
   }
   
   p{
@@ -159,10 +171,10 @@
   }
   @keyframes slide {
     0% {
-        transform: translateX(8%); /* Start außerhalb des Bildschirms rechts */
+        transform: translateX(0%); /* Start außerhalb des Bildschirms rechts */
     }
     100% {
-        transform: translateX(-100%); /* Ende außerhalb des Bildschirms links */
+        transform: translateX(-40%); /* Ende außerhalb des Bildschirms links */
     }
   }
 }
@@ -233,6 +245,11 @@
   .diagonal-bar{
     bottom:40px;
     }
+    .home-button-div{  
+      width:380px;
+    }
+      
+    
 }
 @media(max-width:600px){
   h1{
@@ -246,6 +263,10 @@
   h1{
     font-size:72px;
   }
+  .home-button-div{  
+    width:360px;
+  
+  }
 }
 @media(max-width:480px){
   h2{
@@ -254,10 +275,13 @@
   h1{
     font-size:60px;
   }
-  .home-button-div{
+  .home-button-div{  
     width:320px;
-  button{
+  .button{
     font-size: 16px;
+    width:100px;
+    height: 24px;
+    padding: 14px 22px;
   }
 }
 }
@@ -269,9 +293,10 @@
     font-size:52px;
   }
   .home-button-div{
-    width:300px;
-  button{
+    width:280px;
+  .button{
     font-size: 16px;
+    width:80px;
   }
 }
 }
@@ -284,8 +309,9 @@
   }
   .home-button-div{
     width:260px;
-  button{
+  .button{
     font-size: 14px;
+    padding: 12px 18px;
   }
 }
 }
@@ -306,11 +332,11 @@
     font-size:40px;
   }
   .home-button-div{
-    width:240px;
-  button{
+    width:220px;
+  .button{
     font-size: 12px;
+    padding: 8px 12px;
   }
 }
 }
 }
-

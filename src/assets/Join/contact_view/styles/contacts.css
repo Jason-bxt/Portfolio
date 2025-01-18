@@ -223,7 +223,7 @@ main {
   height: 32px;
   margin-left: 10px;
   vertical-align: middle;
-  color: #29ABE2;
+  color: #29abe2;
   display: none;
 }
 
@@ -267,13 +267,15 @@ main {
   font-size: 16px;
 }
 
-.contactDetailsOption:hover, .respContactOptions div:hover {
+.contactDetailsOption:hover,
+.respContactOptions div:hover {
   font-weight: bold;
   color: #29abe2;
   cursor: pointer;
 }
 
-.contactDetailsOption:hover path, .respContactOptions div:hover path {
+.contactDetailsOption:hover path,
+.respContactOptions div:hover path {
   fill: #29abe2;
 }
 
@@ -293,7 +295,7 @@ main {
 }
 
 .contactDetailsEmail {
-  color:#007cee;
+  color: #007cee;
   word-break: break-word;
 }
 
@@ -347,7 +349,7 @@ main {
 }
 
 .contactDetailsOption:hover svg {
-  fill: rgba(41, 171, 226, 1)
+  fill: rgba(41, 171, 226, 1);
 }
 
 .contactSocials {
@@ -379,7 +381,7 @@ main {
 }
 
 .respButton {
-  background-color: #2A3647;
+  background-color: #2a3647;
   color: white;
   border: 1px;
   border-radius: 56px;
@@ -398,7 +400,8 @@ main {
   background-color: rgba(41, 171, 226, 1);
 }
 
-#contactContent, .contactHeading {
+#contactContent,
+.contactHeading {
   padding-left: 32px;
 }
 
@@ -410,5 +413,5 @@ main {
 
 /* Validation adapation */
 .errorText {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }

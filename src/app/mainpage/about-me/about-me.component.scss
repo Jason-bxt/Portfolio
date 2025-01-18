@@ -1,93 +1,98 @@
-.about-me{
+main {
+  display: flex;
+  justify-content: center;
   background-color: #1c1c1c;
-  height:110vh;
-  display:flex;
-  padding-right:5%;
-  padding-left:5%;
+}
+.about-me {
+  height: 110vh;
+  display: flex;
+  padding-right: 5%;
+  padding-left: 5%;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1920px;
 
- .left-side {
-  position:relative;
+  .left-side {
+    position: relative;
 
-  .striped-div {
-    width:680px;
-    height:680px;
-    background: repeating-linear-gradient(
-      45deg,
-      transparent,
-      transparent 31px,
-      #3DCFB6 20px,
-      #3DCFB6 32px
+    .striped-div {
+      width: 680px;
+      height: 680px;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 31px,
+        #3dcfb6 20px,
+        #3dcfb6 32px
       );
-}
-
-    .profile-img{
-      width:680px;
-      height:680px;
-      border-radius:40px;
-      position:absolute;
-      top:-40px;
-      right:-40px;
-
     }
- }
+
+    .profile-img {
+      width: 680px;
+      height: 680px;
+      border-radius: 40px;
+      position: absolute;
+      top: -40px;
+      right: -40px;
+    }
+  }
 
   .right-side {
-    padding-right:40px;
-    padding-top:240px;
+    padding-right: 40px;
+    padding-top: 240px;
 
-    h5{
-      color:#3DCFB6;
-      font-family: 'karla';
-      font-size:28px;
-      font-weight:400;
-      margin:0 0 20px 0;
+    h5 {
+      color: #3dcfb6;
+      font-family: "karla";
+      font-size: 28px;
+      font-weight: 400;
+      margin: 0 0 20px 0;
     }
 
-    .about-me-div{
-        border:solid 1px #3DCFB6;
-        width:580px;
-        height:580px;
-        border-radius:40px;
-        padding:40px;
-        background-color:#3dcfb71e;
-  
-        h3{
-          font-family: 'fira code';
-          font-size:68px;
-          font-weight:700;
-          color:#3DCFB6;
-          margin:0 0 0 0;
+    .about-me-div {
+      border: solid 1px #3dcfb6;
+      width: 580px;
+      height: 580px;
+      border-radius: 40px;
+      padding: 40px;
+      background-color: #3dcfb71e;
+
+      h3 {
+        font-family: "fira code";
+        font-size: 68px;
+        font-weight: 700;
+        color: #3dcfb6;
+        margin: 0 0 0 0;
+      }
+
+      .main-p {
+        font-family: "karla";
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        width: 100%;
+        margin: 32px 0 32px 0;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        .icon {
+          width: 33px;
+          height: 32px;
+          margin: 0 20px 0 0;
         }
 
-        .main-p{
-          font-family: 'karla';
-          font-size:20px;
-          font-weight:300;
-          color:white;
-          width:100%;
-          margin:32px 0 32px 0;
+        p {
+          width: 90%;
+          font-family: "karla";
+          font-size: 20px;
+          font-weight: 300;
+          color: white;
+          margin: 8px 0 8px 0;
         }
-
-        div{
-          display:flex;
-          align-items: center;
-          .icon {
-            width:33px;
-            height:32px;
-            margin:0 20px 0 0;
-          }
-
-          p{
-            width:90%;
-            font-family: 'karla';
-          font-size:20px;
-          font-weight:300;
-          color:white;
-            margin:8px 0 8px 0;
-          }
-        }
+      }
     }
   }
 
@@ -125,16 +130,16 @@
     }
 
     .right-side {
-      .about-me-div{
-        width:540px;
-        height:540px;
+      .about-me-div {
+        width: 540px;
+        height: 540px;
 
-        div{
-          p{
-          font-size:18px;
+        div {
+          p {
+            font-size: 18px;
           }
         }
-    }
+      }
     }
   }
   @media (max-width: 1460px) {
@@ -151,16 +156,16 @@
     }
 
     .right-side {
-      .about-me-div{
-        width:500px;
-        height:500px;
+      .about-me-div {
+        width: 500px;
+        height: 500px;
 
-        div{
-          p{
-          font-size:16px;
+        div {
+          p {
+            font-size: 16px;
           }
         }
-    }
+      }
     }
   }
   @media (max-width: 1380px) {
@@ -177,62 +182,62 @@
     }
 
     .right-side {
-      .about-me-div{
-        width:460px;
-        height:460px;
-        padding-top:32px;
+      .about-me-div {
+        width: 460px;
+        height: 460px;
+        padding-top: 32px;
 
-        h3{
-                  font-size:60px;
-                }
-        
-                .main-p{
-                  font-size:18px;
-                  margin:28px 0 28px 0;
-                }
-              
-        div{
-          p{
-          font-size:14px;
+        h3 {
+          font-size: 60px;
+        }
+
+        .main-p {
+          font-size: 18px;
+          margin: 28px 0 28px 0;
+        }
+
+        div {
+          p {
+            font-size: 14px;
           }
         }
-    }
+      }
     }
   }
-    @media (max-width: 1320px) {
-      .left-side {
-        .striped-div {
-          width: 480px;
-          height: 480px;
-        }
-  
-        .profile-img {
-          width: 500px;
-          height: 500px;
-        }
+  @media (max-width: 1320px) {
+    .left-side {
+      .striped-div {
+        width: 480px;
+        height: 480px;
       }
-  
-      .right-side {
-        .about-me-div{
-          width:440px;
-          height:440px;
-  
-          h3{
-                    font-size:60px;
-                  }
-          
-                  .main-p{
-                    font-size:18px;
-                    margin:16px 0 20px 0;
-                  }
-                
-          div{
-            p{
-            font-size:14px;
-            }
+
+      .profile-img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+
+    .right-side {
+      .about-me-div {
+        width: 440px;
+        height: 440px;
+
+        h3 {
+          font-size: 60px;
+        }
+
+        .main-p {
+          font-size: 18px;
+          margin: 16px 0 20px 0;
+        }
+
+        div {
+          p {
+            font-size: 14px;
           }
+        }
       }
-      }
+    }
   }
   @media (max-width: 1260px) {
     .left-side {
@@ -248,100 +253,100 @@
     }
 
     .right-side {
-      .about-me-div{
-        width:420px;
-        height:420px;
+      .about-me-div {
+        width: 420px;
+        height: 420px;
 
-        h3{
-                  font-size:52px;
-                }
-        
-                .main-p{
-                  font-size:16px;
-                  margin:16px 0 20px 0;
-                }
-              
-        div{
-          p{
-          font-size:14px;
+        h3 {
+          font-size: 52px;
+        }
+
+        .main-p {
+          font-size: 16px;
+          margin: 16px 0 20px 0;
+        }
+
+        div {
+          p {
+            font-size: 14px;
           }
         }
-    }
-    }
-}
-@media (max-width: 1220px) {
-  padding-right: 3%; 
-  padding-left: 3%;
-
-  .left-side {
-    .striped-div {
-      width: 440px;
-      height: 440px;
-    }
-
-    .profile-img {
-      width: 460px;
-      height: 460px;
+      }
     }
   }
+  @media (max-width: 1220px) {
+    padding-right: 3%;
+    padding-left: 3%;
 
-  .right-side {
-    .about-me-div{
-      width:400px;
-      height:400px;
-      padding-top:28px;
+    .left-side {
+      .striped-div {
+        width: 440px;
+        height: 440px;
+      }
 
-      h3{
-                font-size:44px;
-              }
-      
-              .main-p{
-                font-size:14px;
-                margin:14px 0 14px 0;
-              }
-            
-      div{
-        p{
-        font-size:14px;
+      .profile-img {
+        width: 460px;
+        height: 460px;
+      }
+    }
+
+    .right-side {
+      .about-me-div {
+        width: 400px;
+        height: 400px;
+        padding-top: 28px;
+
+        h3 {
+          font-size: 44px;
+        }
+
+        .main-p {
+          font-size: 14px;
+          margin: 14px 0 14px 0;
+        }
+
+        div {
+          p {
+            font-size: 14px;
+          }
         }
       }
-  }
-  }
-}
-@media (max-width: 1160px) {
-  .left-side {
-    .striped-div {
-      width: 420px;
-      height: 420px;
-    }
-
-    .profile-img {
-      width: 440px;
-      height: 440px;
     }
   }
+  @media (max-width: 1160px) {
+    .left-side {
+      .striped-div {
+        width: 420px;
+        height: 420px;
+      }
 
-  .right-side {
-    .about-me-div{
-      width:380px;
-      height:380px;
-      padding-bottom:60px;
+      .profile-img {
+        width: 440px;
+        height: 440px;
+      }
+    }
 
-      h3{
-                font-size:40px;
-              }
-      
-              .main-p{
-                font-size:14px;
-                margin:8px 0 8px 0;
-              }
-            
-      div{
-        p{
-        font-size:14px;
+    .right-side {
+      .about-me-div {
+        width: 380px;
+        height: 380px;
+        padding-bottom: 60px;
+
+        h3 {
+          font-size: 40px;
+        }
+
+        .main-p {
+          font-size: 14px;
+          margin: 8px 0 8px 0;
+        }
+
+        div {
+          p {
+            font-size: 14px;
+          }
         }
       }
+    }
   }
-  }
-}
 }

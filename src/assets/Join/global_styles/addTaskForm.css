@@ -327,49 +327,40 @@
   height: fit-content;
   overflow-x: hidden;
 }
-
 .subtaskListElement:hover {
   background: #eeeeee;
   cursor: pointer;
 }
-
 .subtaskListElement:hover div {
   display: flex !important;
 }
-
 .subtaskListSpacer {
   width: 1px;
   height: 24px;
   background: #d1d1d1;
 }
-
 .subtaskListIcons {
   display: none;
   gap: 6px;
   align-items: center;
   justify-content: center;
 }
-
 .dflex {
   display: flex !important;
 }
-
 li[contenteditable="true"]:focus {
   outline: none;
 }
-
 .subtaskEditMode {
   background: white !important;
   border-radius: 0px;
   border-bottom: 1px solid #29abe2;
   cursor: auto !important;
 }
-
 .subtaskEditMode .subtaskListIcons {
   display: flex !important;
   flex-direction: row-reverse;
 }
-
 .taskSuccess {
   box-shadow: 0px 0px 4px 0px #0000001A;
   background: #2A3647;
@@ -390,18 +381,14 @@ li[contenteditable="true"]:focus {
   transform: translate(-50%, -50%);
   animation: slideInBottom 250ms forwards ease-out;
 }
-
 @keyframes slideInBottom {
   0% {
     top: 100vh;
   }
 }
-
-/* validation error-message adaptation */
 .errorText {
   top: 60%;
 }
-
 .validationContainer {
   width: 100%;
 }

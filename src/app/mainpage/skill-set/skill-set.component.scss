@@ -1,12 +1,17 @@
-.skill-set{
+main{
   background-color: #1c1c1c;
+  display:flex;
+  justify-content: center;
+}
+.skill-set{
   height:84vh;
   display:flex;
   padding-right:5%;
   padding-left:5%;
   align-items: center;
   justify-content: space-around;
-
+  width:100%;
+  max-width:1920px;
   .left-side {
     h5{
       color:#3DCFB6;
@@ -70,6 +75,9 @@
         display:flex;
         justify-content: center;
         align-items: center;
+        a{
+          scroll-behavior: smooth;
+        }
       
         .button-text {
           position: absolute;

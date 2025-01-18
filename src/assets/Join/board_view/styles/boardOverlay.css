@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   top: 0;
-  z-Index: 998;
+  z-index: 998;
   left: 100vw;
 }
 
@@ -32,15 +32,15 @@
   position: relative;
   left: 100vw;
   transition: transform 200ms ease-out;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   max-height: 90%;
 }
 
-@media(max-width: 560px) {
+@media (max-width: 560px) {
   .boardCardOverlay {
     width: 90% !important;
   }
-   
+
   .boardCardOverlay h3 {
     font-size: 36px !important;
   }
@@ -54,8 +54,8 @@
   }
 }
 
-@media(max-width: 1110px) {
-  .spacer{
+@media (max-width: 1110px) {
+  .spacer {
     margin: 0 32px !important;
   }
 
@@ -72,7 +72,7 @@
   }
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .boardCardOverlay {
     padding: 12px;
   }
@@ -210,7 +210,7 @@
   font-size: 19px;
 }
 
-.overlaySubtasksArea p{
+.overlaySubtasksArea p {
   color: rgba(42, 54, 71, 1);
   font-size: 20px;
   font-weight: 400;
@@ -243,7 +243,7 @@
   max-width: 404px;
 }
 
-.singleSubtask p{
+.singleSubtask p {
   max-width: 95%;
   height: fit-content;
   flex: 1;
@@ -266,7 +266,7 @@
   width: 100%;
   justify-content: end;
   align-items: center;
-  color: #2A3647;
+  color: #2a3647;
   height: 24px;
 }
 
@@ -295,7 +295,7 @@
 .overlayTaskButtonSpacer {
   width: 1px;
   height: 100%;
-  background: #D1D1D1;
+  background: #d1d1d1;
 }
 
 /* Add Task - Overlay */

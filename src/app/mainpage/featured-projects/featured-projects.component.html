@@ -1,94 +1,107 @@
-<section id="featured-projects" class="featured-projects">
+<main>
+  <section id="featured-projects" class="featured-projects">
 
-<h5>{{ 'FEATURED_PROJECTS.Info' | translate }}</h5>
-<h3>{{ 'FEATURED_PROJECTS.Title' | translate }}</h3>
-<p class="main-p">{{ 'FEATURED_PROJECTS.Description' | translate }}</p>
-
-<div class="project-grid" (click)="toggleOverlay(0)">
-<div class="project-1">
-  <h4>Join</h4>
-
- <div class="technologies">
-  <p>Angular</p>
-  <div class="border"></div>
-  <p>TypeScript</p>
-  <div class="border"></div>
-  <p>HTML</p>
-  <div class="border"></div>
-  <p>CSS</p>
-  <div class="border"></div>
-  <p>Firebase</p>
- </div>
-
-</div>
-
-<div class="project-1-img-div">
-  <div class="striped-div"></div>
-  <img class="project-img" src="./assets/img/join.png" alt="" />
-</div>
-</div>
-
-<div class="project-grid" (click)="toggleOverlay(1)">
-<div class="project-2">
-  <h4>El Pollo Loco</h4>
-
-<div class="technologies">
-  <p>HTML</p>
-  <div class="border"></div>
-  <p>CSS</p>
-  <div class="border"></div>
-  <p>JavaScript</p>
-</div>
-</div>
-
-<div class="project-2-img-div">
-  <div class="striped-div"></div>
-  <img class="project-img" src="./assets/img/el-pollo-loco.png" alt="" />
-</div>
-</div>
-
-<div class="project-grid" (click)="toggleOverlay(2)">
-<div class="project-3">
-  <h4>PokeDex</h4>
-
- <div class="technologies">
-  <p>HTML</p>
-  <div class="border"></div>
-  <p>CSS</p>
-  <div class="border"></div>
-  <p>JavaScript</p>
-  <div class="border"></div>
-  <p>API</p>
- </div>
-
-</div>
-<div class="project-3-img-div" >
-  <div class="striped-div"></div>
-  <img class="project-img" src="./assets/img/pokedex.png" alt="" />
-  </div>
-</div>
-
-
-
-@for(project of overlayProjects; track project.name){
-  <div class="overlay" [ngStyle]="{'display': overlayDisplay}">
-  <div class="left-side">
-    <div class="nr">0{{currentProject.nr}}</div>
-    <h1 class="project-name">{{currentProject.name}}</h1>
-    <h3>What is this project about?</h3>
-    <p class="description">{{currentProject.description}}</p>
-    <div class="technologie-div">
-      <div class="tech-div" *ngFor="let techKey of currentProject.technologies">
-        <div class="technologie">
-          <img class="icon" [src]="techKey.icon" alt="">
-          <p class="technologie-name">{{techKey.name}}</p>
-        </div>
+    <h5>{{ 'FEATURED_PROJECTS.Info' | translate }}</h5>
+    <h3>{{ 'FEATURED_PROJECTS.Title' | translate }}</h3>
+    <p class="main-p">{{ 'FEATURED_PROJECTS.Description' | translate }}</p>
+    
+    <div class="project-grid" (click)="toggleOverlay(0)">
+    <div class="project-1">
+      <h4>Join</h4>
+    
+     <div class="technologies">
+      <p>Angular</p>
+      <div class="border"></div>
+      <p>TypeScript</p>
+      <div class="border"></div>
+      <p>HTML</p>
+      <div class="border"></div>
+      <p>CSS</p>
+      <div class="border"></div>
+      <p>Firebase</p>
+     </div>
+    
+    </div>
+    
+    <div class="project-1-img-div">
+      <div class="striped-div"></div>
+      <img class="project-img" src="./assets/img/join.png" alt="" />
+    </div>
+    </div>
+    
+    <div class="project-grid" (click)="toggleOverlay(1)">
+    <div class="project-2">
+      <h4>El Pollo Loco</h4>
+    
+    <div class="technologies">
+      <p>HTML</p>
+      <div class="border"></div>
+      <p>CSS</p>
+      <div class="border"></div>
+      <p>JavaScript</p>
+    </div>
+    </div>
+    
+    <div class="project-2-img-div">
+      <div class="striped-div"></div>
+      <img class="project-img" src="./assets/img/el-pollo-loco.png" alt="" />
+    </div>
+    </div>
+    
+    <div class="project-grid" (click)="toggleOverlay(2)">
+    <div class="project-3">
+      <h4>PokeDex</h4>
+    
+     <div class="technologies">
+      <p>HTML</p>
+      <div class="border"></div>
+      <p>CSS</p>
+      <div class="border"></div>
+      <p>JavaScript</p>
+      <div class="border"></div>
+      <p>API</p>
+     </div>
+    
+    </div>
+    <div class="project-3-img-div" >
+      <div class="striped-div"></div>
+      <img class="project-img" src="./assets/img/pokedex.png" alt="" />
       </div>
     </div>
-
-    <div class="links">
-      <a class="link-button" target="_blank" href="https://github.com">
-        <p>Github</p>
+    
+    
+    
+    @for(project of overlayProjects; track project.name){
+      <div class="overlay" [ngStyle]="{'display': overlayDisplay}">
+      <div class="left-side">
+        <div class="nr">0{{currentProject.nr}}</div>
+        <h1 class="project-name">{{currentProject.name}}</h1>
+        <h3>{{ 'FEATURED_PROJECTS.Overlay.Title' | translate }}</h3>
+        <p class="description">{{currentProject.description}}</p>
+        <div class="technologie-div">
+          <div class="tech-div" *ngFor="let techKey of currentProject.technologies">
+            <div class="technologie">
+              <img class="icon" [src]="techKey.icon" alt="">
+              <p class="technologie-name">{{techKey.name}}</p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="links">
+          <a class="link-button" target="_blank" href="{{currentProject.git}}">
+            <p>Github</p>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <mask id="mask0_6_12270" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+              <rect width="20" height="20" fill="#3DCFB6"/>
+              </mask>
+              <g mask="url(#mask0_6_12270)">
+              <path d="M14.1954 4.85729L5.91812 13.1267C5.80271 13.2419 5.67854 13.2948 5.54563 13.2852C5.41257 13.2756 5.28833 13.2131 5.17292 13.0977C5.05764 12.9823 5 12.856 5 12.7188C5 12.5815 5.05764 12.4552 5.17292 12.3398L13.4215 4.08333H6.23708C6.08361 4.08333 5.95493 4.03181 5.85104 3.92875C5.74729 3.82569 5.69542 3.69806 5.69542 3.54583C5.69542 3.39347 5.74729 3.26444 5.85104 3.15875C5.95493 3.05292 6.08361 3 6.23708 3H14.6087C14.7986 3 14.9577 3.06417 15.086 3.1925C15.2145 3.32097 15.2788 3.48007 15.2788 3.66979V12.0417C15.2788 12.1951 15.2272 12.3237 15.1242 12.4275C15.0211 12.5314 14.8935 12.5833 14.7412 12.5833C14.5889 12.5833 14.4598 12.5314 14.354 12.4275C14.2483 12.3237 14.1954 12.1951 14.1954 12.0417V4.85729Z" fill="#3DCFB6"/>
+              </g>
+              </svg>
+        </a>
+    
+       <a class="link-button" target="_blank" href="{{currentProject.test}}">
+        <p>Live Test</p>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <mask id="mask0_6_12270" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
           <rect width="20" height="20" fill="#3DCFB6"/>
@@ -97,43 +110,32 @@
           <path d="M14.1954 4.85729L5.91812 13.1267C5.80271 13.2419 5.67854 13.2948 5.54563 13.2852C5.41257 13.2756 5.28833 13.2131 5.17292 13.0977C5.05764 12.9823 5 12.856 5 12.7188C5 12.5815 5.05764 12.4552 5.17292 12.3398L13.4215 4.08333H6.23708C6.08361 4.08333 5.95493 4.03181 5.85104 3.92875C5.74729 3.82569 5.69542 3.69806 5.69542 3.54583C5.69542 3.39347 5.74729 3.26444 5.85104 3.15875C5.95493 3.05292 6.08361 3 6.23708 3H14.6087C14.7986 3 14.9577 3.06417 15.086 3.1925C15.2145 3.32097 15.2788 3.48007 15.2788 3.66979V12.0417C15.2788 12.1951 15.2272 12.3237 15.1242 12.4275C15.0211 12.5314 14.8935 12.5833 14.7412 12.5833C14.5889 12.5833 14.4598 12.5314 14.354 12.4275C14.2483 12.3237 14.1954 12.1951 14.1954 12.0417V4.85729Z" fill="#3DCFB6"/>
           </g>
           </svg>
-    </a>
-
-   <a class="link-button" target="_blank" href="{{currentProject.test}}">
-    <p>Live Test</p>
-    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <mask id="mask0_6_12270" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-      <rect width="20" height="20" fill="#3DCFB6"/>
-      </mask>
-      <g mask="url(#mask0_6_12270)">
-      <path d="M14.1954 4.85729L5.91812 13.1267C5.80271 13.2419 5.67854 13.2948 5.54563 13.2852C5.41257 13.2756 5.28833 13.2131 5.17292 13.0977C5.05764 12.9823 5 12.856 5 12.7188C5 12.5815 5.05764 12.4552 5.17292 12.3398L13.4215 4.08333H6.23708C6.08361 4.08333 5.95493 4.03181 5.85104 3.92875C5.74729 3.82569 5.69542 3.69806 5.69542 3.54583C5.69542 3.39347 5.74729 3.26444 5.85104 3.15875C5.95493 3.05292 6.08361 3 6.23708 3H14.6087C14.7986 3 14.9577 3.06417 15.086 3.1925C15.2145 3.32097 15.2788 3.48007 15.2788 3.66979V12.0417C15.2788 12.1951 15.2272 12.3237 15.1242 12.4275C15.0211 12.5314 14.8935 12.5833 14.7412 12.5833C14.5889 12.5833 14.4598 12.5314 14.354 12.4275C14.2483 12.3237 14.1954 12.1951 14.1954 12.0417V4.85729Z" fill="#3DCFB6"/>
-      </g>
-      </svg>
-   </a>
+        </a>
+        </div>
+    
+      </div>
+    
+      <div class="right-side">
+        <button class="close-button" (click)="toggleOverlay()"> 
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 18L18 6M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+        <img [src]="currentProject.img" alt="">
+        <div class="button-div" (click)="nextProject()">
+          <p>{{ 'FEATURED_PROJECTS.Overlay.Button' | translate }}</p>
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_6_10782" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="4" width="32" height="32">
+            <rect x="8" y="4" width="32" height="32" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_6_10782)">
+            <path d="M30.1693 21H15C14.7162 21 14.4787 20.9042 14.2873 20.7127C14.0958 20.5213 14 20.2838 14 20C14 19.7162 14.0958 19.4787 14.2873 19.2873C14.4787 19.0958 14.7162 19 15 19H30.1693L23.277 12.1077C23.0788 11.9095 22.9809 11.6775 22.9833 11.4117C22.986 11.1459 23.0907 10.9096 23.2973 10.7027C23.5042 10.5096 23.7384 10.4096 24 10.4027C24.2616 10.3958 24.4958 10.4958 24.7027 10.7027L33.1563 19.1563C33.2812 19.2812 33.3692 19.4129 33.4203 19.5513C33.4717 19.6898 33.4973 19.8393 33.4973 20C33.4973 20.1607 33.4717 20.3102 33.4203 20.4487C33.3692 20.5871 33.2812 20.7188 33.1563 20.8437L24.7027 29.2973C24.518 29.482 24.2893 29.5765 24.0167 29.5807C23.744 29.5849 23.5042 29.4905 23.2973 29.2973C23.0907 29.0905 22.9873 28.8529 22.9873 28.5847C22.9873 28.3162 23.0907 28.0786 23.2973 27.8717L30.1693 21Z" fill="#3DCFB6"/>
+            </g>
+            </svg>
+        </div>
+      </div>
     </div>
-
-  </div>
-
-  <div class="right-side">
-    <button class="close-button" (click)="toggleOverlay()"> 
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 18L18 6M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round" />
-      </svg>
-    </button>
-    <img [src]="currentProject.img" alt="">
-    <div class="button-div" (click)="nextProject()">
-      <p>{{ 'FEATURED_PROJECTS.Overlay.Button' | translate }}</p>
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <mask id="mask0_6_10782" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="8" y="4" width="32" height="32">
-        <rect x="8" y="4" width="32" height="32" fill="#D9D9D9"/>
-        </mask>
-        <g mask="url(#mask0_6_10782)">
-        <path d="M30.1693 21H15C14.7162 21 14.4787 20.9042 14.2873 20.7127C14.0958 20.5213 14 20.2838 14 20C14 19.7162 14.0958 19.4787 14.2873 19.2873C14.4787 19.0958 14.7162 19 15 19H30.1693L23.277 12.1077C23.0788 11.9095 22.9809 11.6775 22.9833 11.4117C22.986 11.1459 23.0907 10.9096 23.2973 10.7027C23.5042 10.5096 23.7384 10.4096 24 10.4027C24.2616 10.3958 24.4958 10.4958 24.7027 10.7027L33.1563 19.1563C33.2812 19.2812 33.3692 19.4129 33.4203 19.5513C33.4717 19.6898 33.4973 19.8393 33.4973 20C33.4973 20.1607 33.4717 20.3102 33.4203 20.4487C33.3692 20.5871 33.2812 20.7188 33.1563 20.8437L24.7027 29.2973C24.518 29.482 24.2893 29.5765 24.0167 29.5807C23.744 29.5849 23.5042 29.4905 23.2973 29.2973C23.0907 29.0905 22.9873 28.8529 22.9873 28.5847C22.9873 28.3162 23.0907 28.0786 23.2973 27.8717L30.1693 21Z" fill="#3DCFB6"/>
-        </g>
-        </svg>
-    </div>
-  </div>
-</div>
-}
-
-</section>
+    }
+    
+    </section>
+</main>

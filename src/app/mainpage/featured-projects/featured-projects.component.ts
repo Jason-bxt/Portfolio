@@ -26,31 +26,35 @@ export class FeaturedProjectsComponent implements OnInit {
   }
 
   loadProjects() {
-    const description = this.translate.instant('FEATURED_PROJECTS.Overlay.DescriptionOne');
-    console.log('Project Description:', description); 
-  
-    this.overlayProjects = [
-      {
-        nr: 1,
-        name: 'Join',
-        description: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.", 
-        img: './assets/img/join.png',
-        test: './assets/Join/index.html',
-        technologies: [
-          { icon: `./assets/icon/css.svg`, name: 'CSS' },
-          { icon: `./assets/icon/html.svg`, name: 'HTML' },
-          { icon: `./assets/icon/angular.svg`, name: 'Angular' },
-          { icon: `./assets/icon/java-script.svg`, name: 'JavaScript' },
-          { icon: `./assets/icon/firebase.svg`, name: 'Firebase' },
-          { icon: `./assets/icon/scrum.svg`, name: 'Scrum' },
-        ]
-      },
+    this.translate.get([
+      'FEATURED_PROJECTS.Overlay.DescriptionOne',
+      'FEATURED_PROJECTS.Overlay.DescriptionTwo',
+      'FEATURED_PROJECTS.Overlay.DescriptionThree',
+    ]).subscribe((translations) => {
+      this.overlayProjects = [
+        {
+          nr: 1,
+          name: 'Join',
+          description: translations['FEATURED_PROJECTS.Overlay.DescriptionOne'], // Dynamische Übersetzung
+          img: './assets/img/join.png',
+          test: './assets/Join/index.html',
+          git: 'https://github.com/Jason-bxt/Join',
+          technologies: [
+            { icon: `./assets/icon/css.svg`, name: 'CSS' },
+            { icon: `./assets/icon/html.svg`, name: 'HTML' },
+            { icon: `./assets/icon/angular.svg`, name: 'Angular' },
+            { icon: `./assets/icon/java-script.svg`, name: 'JavaScript' },
+            { icon: `./assets/icon/firebase.svg`, name: 'Firebase' },
+            { icon: `./assets/icon/scrum.svg`, name: 'Scrum' },
+          ],
+        },
       {
         nr: 2,
         name: 'El Pollo Loco',
-        description: "Jump and run game based on object-oriented approach. Help pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        description: translations['FEATURED_PROJECTS.Overlay.DescriptionTwo'],
         img: './assets/img/el-pollo-loco.png',
         test: './assets/El-pollo-loco/index.html',
+        git: 'https://github.com/Jason-bxt/PokeDex',
         technologies: [
           { icon: `./assets/icon/java-script.svg`, name: 'JavaScript' },
           { icon: `./assets/icon/html.svg`, name: 'HTML' },
@@ -60,9 +64,10 @@ export class FeaturedProjectsComponent implements OnInit {
       {
         nr: 3,
         name: 'PokeDex',
-        description: "Pokedex is an index of all Pokemons existing. it uses the official Pokemon API. You will find all detail for your favorite Pokemon through one click",
+        description: translations['FEATURED_PROJECTS.Overlay.DescriptionThree'],
         img: './assets/img/pokedex.png',
         test: './assets/Pokedex/index.html',
+        git: 'https://github.com/Jason-bxt/Jump-and-Run-Game---EL-Pollo-Loco',
         technologies: [
           { icon: `./assets/icon/java-script.svg`, name: 'JavaScript' },
           { icon: `./assets/icon/html.svg`, name: 'HTML' },
@@ -71,7 +76,8 @@ export class FeaturedProjectsComponent implements OnInit {
         ],
       },
     ];
-  }
+  });
+}
   
   toggleOverlay(index: number = -1) {
     if (index !== -1) {
