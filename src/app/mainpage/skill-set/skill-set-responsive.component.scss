@@ -75,8 +75,8 @@
     padding-left:5%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-        margin-top: 80px;
+    justify-content: start;
+        margin-top: 200px;
   
     .left-side {
       height:50%;
@@ -141,8 +141,9 @@
 }
 @media (max-width: 580px) {
   .skill-set{
-    height:160vh;
+    height:140vh;
     width:90%;
+    margin-top: 100px;
     
   
     .left-side {
@@ -175,6 +176,7 @@
 }
 @media (max-width: 520px) {
   .skill-set{  
+    
     .left-side {
       h5{
         font-size:28px;
@@ -217,12 +219,14 @@
 }
 @media (max-width: 468px) {
   .skill-set{  
+    margin-top: 0px;
     .left-side {
       h5{
         font-size:28px;
       }
       .skill-div{
         height: 62%;
+        
         h3{
           font-size:48px;
           margin:0 0 20px 0;
@@ -333,12 +337,13 @@
 @media (max-width: 360px) {
   .skill-set{  
     .left-side {
+      height:45%;
       h5{
         font-size:24px;
       }
       .skill-div{
         width: 72%;
-        height:52%;
+        height:60%;
         h3{
           font-size:32px;
           margin:0 0 20px 0;

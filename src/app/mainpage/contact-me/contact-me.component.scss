@@ -62,9 +62,13 @@ main {
 
     div {
       border-top: solid 1px #3dcfb6;
-      border-bottom: solid 1px #3dcfb6;
       display: flex;
       flex-direction: column;
+      .contact-error{
+        color: rgba(252, 40, 40, 0.651);
+        font-size: 18px;
+        padding-left:40px;
+      }
       p {
         color: #3dcfb6;
         font-family: "fira code";
@@ -100,6 +104,13 @@ main {
       }
     }
 
+    .space{
+      height:20px;
+    }
+    .privacy-p{
+      color: #3dcfb6;
+      cursor: pointer;
+    }
     .button {
       color: white;
       background-color: transparent;
@@ -114,39 +125,84 @@ main {
       overflow: hidden;
       align-self: center;
     }
-    .check-box {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      border: none;
-      gap: 8px;
+    .checkbox-wrapper-28 {
+      --size: 25px;
       position: relative;
-      .check-box-img {
-        width: 26px;
-        height: 26px;
-        position: absolute;
-        left: 1px;
-        top: 30px;
+      border:none;
+    }
+  
+    .checkbox-wrapper-28 *,
+    .checkbox-wrapper-28 *:before,
+    .checkbox-wrapper-28 *:after {
+      box-sizing: border-box;
+    }
+  
+    .checkbox-wrapper-28 .promoted-input-checkbox {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+      
+    }
+  
+    .checkbox-wrapper-28 input:checked ~ svg {
+      height: calc(var(--size) * 0.6);
+      -webkit-animation: draw-checkbox-28 ease-in-out 0.2s forwards;
+              animation: draw-checkbox-28 ease-in-out 0.2s forwards;
+    }
+    .checkbox-wrapper-28 label:active::after {
+      background-color: #e6e6e6;
+    }
+    .checkbox-wrapper-28 label {
+      color: white;
+      line-height: var(--size);
+      cursor: pointer;
+      position: relative;
+    }
+    .checkbox-wrapper-28 label:after {
+      content: "";
+      height: var(--size);
+      width: var(--size);
+      margin-right: 8px;
+      float: left;
+      border: 2px solid #3dcfb6;
+      border-radius: 3px;
+      transition: 0.15s all ease-out;
+    }
+    .checkbox-wrapper-28 svg {
+      stroke: #3dcfb6;
+      stroke-width: 3px;
+      height: 0;
+      width: calc(var(--size) * 0.6);
+      position: absolute;
+      left: calc(var(--size) * 0.21);
+      top: calc(var(--size) * 0.2);
+      stroke-dasharray: 33;
+    }
+  
+    @-webkit-keyframes draw-checkbox-28 {
+      0% {
+        stroke-dashoffset: 33;
       }
-
-      .privacyPolicy {
-        width: 20px;
-        z-index: 1000;
-        opacity: 0;
-        background-color: transparent;
-      }
-      label {
-        font-size: 18px;
-        font-family: "Karla";
-        font-weight: 300;
-        color: white;
-        a {
-          text-decoration: none;
-          color: #3dcfb6;
-          cursor: pointer;
-          font-weight: 400;
-        }
+      100% {
+        stroke-dashoffset: 0;
       }
     }
+  
+    @keyframes draw-checkbox-28 {
+      0% {
+        stroke-dashoffset: 33;
+      }
+      100% {
+        stroke-dashoffset: 0;
+      }
+    }
+
   }
 }
+
+

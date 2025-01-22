@@ -14,18 +14,19 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class ContactMeComponent {
 
   http = inject(HttpClient);
-
+ 
   contactData = {
     name: "",
     email: "",
     message: "",
   }
 
-  
-  mailTest = true;
+  successMessage: string = '';
+  errorMessage: string = '';
+ 
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://jason-peters.de/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -36,22 +37,28 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      if (ngForm.submitted && ngForm.form.valid) {
       console.log("sucess")
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
 
             ngForm.resetForm();
+            this.successMessage = 'Your message has been sent successfully!';
+            this.errorMessage = ''; 
           },
           error: (error) => {
             console.error(error);
+            this.errorMessage = 'There was an error sending your message. Please try again.';
+            this.successMessage = ''; 
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+    } else if (ngForm.submitted && ngForm.form.valid) {
 
       ngForm.resetForm();
+      this.contactData = { name: "", email: "", message: "",};
     }
   }
 }
+

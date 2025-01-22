@@ -1,9 +1,11 @@
 @media (max-width: 600px) {
   .about-me {
+    margin-bottom:40px;
     .right-side {
-      width: 83%;
+     
 
       .about-me-div {
+        width:82%;
         .striped-div {
           top: 160px;
           left: -20px;
@@ -32,6 +34,7 @@
 @media (max-width: 560px) {
   .about-me {
     height: 156vh;
+    margin-bottom:0px;
     .left-side {
       height: 50%;
 
@@ -117,7 +120,6 @@
       }
     }
     .right-side {
-      width: 83%;
       height: 54%;
 
       .about-me-div {
@@ -180,7 +182,7 @@
       }
     }
     .right-side {
-      width: 82%;
+    
       height: 58%;
 
       .about-me-div {
@@ -226,7 +228,7 @@
       .about-me-div {
         padding: 32px;
         height: 74%;
-        width: 94%;
+        width: 84%;
 
         h3 {
           font-size: 44px;
@@ -290,7 +292,7 @@
       .about-me-div {
         padding: 32px;
         height: 74%;
-        width: 94%;
+        width: 80%;
 
         h3 {
           font-size: 44px;

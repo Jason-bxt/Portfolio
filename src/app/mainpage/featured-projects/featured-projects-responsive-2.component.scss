@@ -18,13 +18,13 @@
     .overlay {
       top: 172px;
       height: 48vh;
-      width: 86vw;
+      width: 84vw;
       .left-side {
         .nr {
-          font-size: 80px;
+          font-size: 64px;
         }
         .project-name {
-          font-size: 64px;
+          font-size: 50px;
         }
         h3 {
           font-size: 20px;
@@ -45,10 +45,12 @@
           display: flex;
           margin: 0px 0px 0px 0px;
           width: 340px;
+   
         }
         .link-button {
           height: 22px;
           width: 100px;
+          padding:8px 8px;
         }
       }
     }
@@ -65,7 +67,7 @@
           font-size: 72px;
         }
         .project-name {
-          font-size: 56px;
+          font-size: 48px;
         }
         h3 {
           font-size: 18px;
@@ -288,10 +290,10 @@
         height: 72%;
         justify-content: center;
         .nr {
-          font-size: 80px;
+          font-size: 72px;
         }
         .project-name {
-          font-size: 60px;
+          font-size: 56px;
           margin: 0;
         }
         h3 {
@@ -329,13 +331,13 @@
         .links {
           display: flex;
           justify-content: space-evenly;
-          margin: 16px 0px 0px 0px;
+          margin: 0px 0px 0px 0px;
           width: 100%;
           .link-button {
             height: 28px;
             width: 120px;
             font-size: 18px;
-            padding: 12px 12px;
+            padding: 8px 8px;
           }
         }
       }
@@ -361,7 +363,7 @@
         .button-div {
           width: 200px;
           position: absolute;
-          bottom: -618px;
+          bottom: -572px;
           right: 4px;
           p {
             font-size: 18px;
