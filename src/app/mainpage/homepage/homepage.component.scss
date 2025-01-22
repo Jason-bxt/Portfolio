@@ -76,25 +76,25 @@ main{
     
 @keyframes slide-text {
   0% {
-    transform: translateX(0) translateY(-50%); // Start: Text ist sichtbar in der Mitte
+    transform: translateX(0) translateY(-50%); 
   }
   25% {
-    transform: translateX(-150%) translateY(-50%); // Text slidet komplett nach links heraus
+    transform: translateX(-150%) translateY(-50%); 
   }
   55% {
-    transform: translateX(-150%) translateY(-250%); // Text bewegt sich nach oben außerhalb des Buttons
+    transform: translateX(-150%) translateY(-250%); 
   }
 
 
   65% {
-    transform: translateX(150%) translateY(-250%); // Text slidet von links nach rechts oben
+    transform: translateX(150%) translateY(-250%); 
   }
   75% {
-    transform: translateX(150%) translateY(-50%); // Text bewegt sich nach unten außerhalb des Buttons
+    transform: translateX(150%) translateY(-50%); 
   }
  
   100% {
-    transform: translateX(0) translateY(-50%); // Text slidet zurück in die Mitte
+    transform: translateX(0) translateY(-50%); 
   }
 }
 
@@ -119,10 +119,10 @@ main{
   }
   @keyframes bounce {
     0%, 100% {
-      transform: translateY(0); /* Anfangs- und Endposition */
+      transform: translateY(0); 
     }
     50% {
-      transform: translateY(-10px); /* Pfeil bewegt sich nach oben */
+      transform: translateY(-10px); 
     }
   }
 }
@@ -171,10 +171,10 @@ main{
   }
   @keyframes slide {
     0% {
-        transform: translateX(0%); /* Start außerhalb des Bildschirms rechts */
+        transform: translateX(0%); 
     }
     100% {
-        transform: translateX(-40%); /* Ende außerhalb des Bildschirms links */
+        transform: translateX(-40%); 
     }
   }
 }

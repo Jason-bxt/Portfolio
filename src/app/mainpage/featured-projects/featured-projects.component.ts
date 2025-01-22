@@ -35,7 +35,7 @@ export class FeaturedProjectsComponent implements OnInit {
         {
           nr: 1,
           name: 'Join',
-          description: translations['FEATURED_PROJECTS.Overlay.DescriptionOne'], // Dynamische Übersetzung
+          description: translations['FEATURED_PROJECTS.Overlay.DescriptionOne'], 
           img: './assets/img/join.png',
           test: './assets/Join/index.html',
           git: 'https://github.com/Jason-bxt/Join',
@@ -81,7 +81,7 @@ export class FeaturedProjectsComponent implements OnInit {
   
   toggleOverlay(index: number = -1) {
     if (index !== -1) {
-      this.currentIndex = index; // Setze den aktuellen Index, wenn ein gültiger Index übergeben wird
+      this.currentIndex = index; 
     }
     this.overlayDisplay = this.overlayDisplay === 'flex' ? 'none' : 'flex';
   }

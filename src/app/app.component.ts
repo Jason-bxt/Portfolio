@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationModule } from './translation.module'; // Importiere das Übersetzungsmodul
+import { TranslationModule } from './translation.module'; 
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ import { TranslationModule } from './translation.module'; // Importiere das Übe
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    TranslationModule 
+    TranslationModule
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']

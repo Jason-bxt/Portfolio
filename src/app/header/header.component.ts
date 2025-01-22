@@ -10,7 +10,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']  
 })
 export class HeaderComponent {
-  constructor(public translate: TranslateService) {} // Hier als public
+  constructor(public translate: TranslateService) {} 
 
   switchLanguage(language: string) {
     this.translate.use(language);
