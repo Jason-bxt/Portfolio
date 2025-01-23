@@ -23,9 +23,7 @@ export class AppComponent {
   title = 'portfolio';
 
   constructor(private translate: TranslateService) {
-    // Setze die Standardsprache
     this.translate.setDefaultLang('en');
-    // Setze die aktuelle Sprache
     this.translate.use('en');
   }
 

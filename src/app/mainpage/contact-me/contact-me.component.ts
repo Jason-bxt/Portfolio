@@ -21,9 +21,7 @@ export class ContactMeComponent {
     message: "",
   }
 
-  successMessage: string = '';
-  errorMessage: string = '';
- 
+  termsAccepted: boolean = false;
 
   post = {
     endPoint: 'https://jason-peters.de/sendMail.php',
@@ -37,27 +35,21 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-      if (ngForm.submitted && ngForm.form.valid) {
-      console.log("sucess")
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+
+    if (ngForm.valid && this.termsAccepted) {
+      this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
-            this.successMessage = 'Your message has been sent successfully!';
-            this.errorMessage = ''; 
           },
           error: (error) => {
             console.error(error);
-            this.errorMessage = 'There was an error sending your message. Please try again.';
-            this.successMessage = ''; 
+    
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid) {
-
-      ngForm.resetForm();
-      this.contactData = { name: "", email: "", message: "",};
+    } else {
+   
     }
   }
 }

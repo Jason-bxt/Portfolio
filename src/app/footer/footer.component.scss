@@ -1,8 +1,14 @@
-.footer {
-  height: 20vh;
+main {
+  display: flex;
+  justify-content: center;
   background-color: #1c1c1c;
+}
+
+.footer {
   padding-right: 5%;
   padding-left: 5%;
+  max-width:1920px;
+  width:100%;
 
   .footer-div {
     display: flex;
@@ -53,10 +59,10 @@
 
 @media (max-width: 768px) {
   .footer {
-    height: 28vh;
     width: 90%;
     padding-right: 5%;
     padding-left: 5%;
+    padding-top:10%;
     display: flex;
     flex-direction: column;
     align-items: center;

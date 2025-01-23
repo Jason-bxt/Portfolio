@@ -3,7 +3,6 @@
     .left-side {
       .skill-div {
         width: 460px;
-        height: 420px;
         h3 {
           font-size: 68px;
           margin: 0 0 24px 0;
@@ -33,7 +32,6 @@
     .left-side {
       .skill-div {
         width: 440px;
-        height: 400px;
         h3 {
           font-size: 68px;
           margin: 0 0 12px 0;
@@ -62,21 +60,19 @@
     .left-side {
       .skill-div {
         width: 368px;
-        height: 400px;
       }
     }
   }
 }
 @media (max-width: 768px) {
   .skill-set{
-    height:180vh;
     width:90%;
     padding-right:5%;
     padding-left:5%;
     flex-direction: column;
     align-items: center;
     justify-content: start;
-        margin-top: 200px;
+        margin-top: 120px;
   
     .left-side {
       height:50%;
@@ -92,7 +88,6 @@
       }
       .skill-div{
           width:86%;
-          height:64%;
           border-radius:40px;
           padding:40px;
         h3{
@@ -141,7 +136,6 @@
 }
 @media (max-width: 580px) {
   .skill-set{
-    height:140vh;
     width:90%;
     margin-top: 100px;
     
@@ -153,7 +147,6 @@
       }
       .skill-div{
           width:83%;
-          height:64%;
           border-radius:40px;
           padding:40px;
         h3{
@@ -183,7 +176,6 @@
       }
       .skill-div{
         width:82%;
-        height:66%;
         h3{
           font-size:62px;
           margin:0 0 20px 0;
@@ -219,13 +211,11 @@
 }
 @media (max-width: 468px) {
   .skill-set{  
-    margin-top: 0px;
     .left-side {
       h5{
         font-size:28px;
       }
       .skill-div{
-        height: 62%;
         
         h3{
           font-size:48px;
@@ -268,7 +258,6 @@
       }
       .skill-div{
         width:76%;
-        height:62%;
         h3{
           font-size:48px;
           margin:0 0 20px 0;
@@ -294,7 +283,6 @@
         font-size:24px;
       }
       .skill-div{
-        height:58%;
         h3{
           font-size:40px;
           margin:0 0 20px 0;
@@ -343,7 +331,6 @@
       }
       .skill-div{
         width: 72%;
-        height:60%;
         h3{
           font-size:32px;
           margin:0 0 20px 0;

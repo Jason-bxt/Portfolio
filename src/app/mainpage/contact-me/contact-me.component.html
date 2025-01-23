@@ -7,7 +7,7 @@
       <h4>{{ 'CONTACT_ME.SecondTitle' | translate }}</h4>
     
       <p>{{ 'CONTACT_ME.Description' | translate }}</p>
-      <div><p>{{ 'CONTACT_ME.DescriptionTwo' | translate }}</p> <p class="lets-talk">{{ 'CONTACT_ME.DescriptionThree' | translate }}</p></div>
+      <div><p class="need-dev">{{ 'CONTACT_ME.DescriptionTwo' | translate }}</p> <span class="lets-talk">{{ 'CONTACT_ME.DescriptionThree' | translate }}</span></div>
     </div>
     
 
@@ -18,7 +18,7 @@
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div>
           <p>{{ 'CONTACT_ME.Contact.InputOne' | translate }}</p>
-          <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" placeholder="Your name goes here" required>
+          <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" placeholder="{{ 'CONTACT_ME.Contact.PlaceholderOne' | translate }}" required>
           @if(!name.valid && name.touched){
             <span class="contact-error">{{ 'CONTACT_ME.Contact.PlaceholderOne' | translate }}</span>
           }
@@ -26,25 +26,24 @@
       
         <div>
           <p>{{ 'CONTACT_ME.Contact.InputTwo' | translate }}</p>
-          <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="name" placeholder="your-email.com"  required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-          @if(!email.valid && email.touched){
+          <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email" placeholder="{{ 'CONTACT_ME.Contact.PlaceholderTwo' | translate }}"  required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+          @if(!email.valid && name.touched){
             <span class="contact-error">{{ 'CONTACT_ME.Contact.PlaceholderTwo' | translate }}</span>
           }
         </div>
       
         <div>
           <p>{{ 'CONTACT_ME.Contact.InputThree' | translate }}</p>
-          <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="name" placeholder="Hello Jason, I am interested in ..."  required></textarea>
-          @if(!message.valid && message.touched){
+          <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" placeholder="{{ 'CONTACT_ME.Contact.PlaceholderThree' | translate }}"  required></textarea>
+          @if(!message.valid && name.touched){
             <span class="contact-error">{{ 'CONTACT_ME.Contact.PlaceholderThree' | translate }}</span>
           }
         </div>
       
-       
       <div class="space"></div>
 
       <div class="checkbox-wrapper-28" id="checkbox">
-        <input id="tmp-28" type="checkbox"  name="termsAccepted" class="promoted-input-checkbox  required"/>
+        <input id="tmp-28" type="checkbox" [(ngModel)]="termsAccepted" name="termsAccepted" class="promoted-input-checkbox required" required />
         <svg><use xlink:href="#checkmark-28" /></svg>
         <label for="tmp-28">
           {{ 'CONTACT_ME.Policy' | translate }} <a class="privacy-p">{{ 'CONTACT_ME.PolicyTwo' | translate }}</a>
@@ -57,7 +56,10 @@
         </svg>
       </div>
     
-      <input class="button" type="submit" value="Say Hello ;)">
+    
+        <input class="button" type="submit" value="Say Hello">
+      
+    
     </form>
 
     

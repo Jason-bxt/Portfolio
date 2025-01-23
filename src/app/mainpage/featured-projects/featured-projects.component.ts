@@ -54,7 +54,7 @@ export class FeaturedProjectsComponent implements OnInit {
         description: translations['FEATURED_PROJECTS.Overlay.DescriptionTwo'],
         img: './assets/img/el-pollo-loco.png',
         test: './assets/El-pollo-loco/index.html',
-        git: 'https://github.com/Jason-bxt/PokeDex',
+        git: './assets/Pokedex/index.html',
         technologies: [
           { icon: `./assets/icon/java-script.svg`, name: 'JavaScript' },
           { icon: `./assets/icon/html.svg`, name: 'HTML' },
@@ -66,7 +66,7 @@ export class FeaturedProjectsComponent implements OnInit {
         name: 'PokeDex',
         description: translations['FEATURED_PROJECTS.Overlay.DescriptionThree'],
         img: './assets/img/pokedex.png',
-        test: './assets/Pokedex/index.html',
+        test: 'https://github.com/Jason-bxt/PokeDex',
         git: 'https://github.com/Jason-bxt/Jump-and-Run-Game---EL-Pollo-Loco',
         technologies: [
           { icon: `./assets/icon/java-script.svg`, name: 'JavaScript' },

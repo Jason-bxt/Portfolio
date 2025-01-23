@@ -14,6 +14,10 @@ main{
   position:relative;
   a{
     scroll-behavior: smooth;
+    .homepage-svgs{
+      width:40px;
+      height:40px;
+    }
   }
 
   h2{
@@ -109,8 +113,9 @@ main{
   position:absolute;
   bottom:0px;
   left:120px;
+  height:40%;
   div{
-    height:280px;
+    height:100%;
     width:1px;
     background-color:#3DCFB6;
   }
@@ -134,8 +139,9 @@ main{
   position:absolute;
   bottom:0px;
   right:120px;
+  height:54%;
   div{
-    height:280px;
+    height:100%;
     width:1px;
     background-color:white;
   }
@@ -146,7 +152,7 @@ main{
   position:absolute;
   bottom:100px;
   height:60px;
-  width:100%;
+  width:99%;
   max-width:1920px;
   transform: rotate(-5deg);
   overflow: hidden;
@@ -154,7 +160,7 @@ main{
     display: flex; 
     align-items: center;
     height:100%;
-    width:100%;
+    width:99%;
     animation: slide 6s linear infinite;
   }
   
@@ -230,14 +236,12 @@ main{
 }
 @media(max-width:768px){
   .left-links-div{
-    div{
-      height:260px;
-    }
+  height:38%;
   }
   .right-links-div {
     gap:8px;
+    height:34%;
     div{
-      height:140px;
       width:1px;
       background-color:white;
     }
@@ -277,6 +281,8 @@ main{
   }
   .home-button-div{  
     width:320px;
+    margin-top: 28px;
+
   .button{
     font-size: 16px;
     width:100px;
@@ -286,6 +292,12 @@ main{
 }
 }
 @media(max-width:400px){
+  a{
+    .homepage-svgs{
+      width:32px;
+      height:32px;
+    }
+  }
   h2{
     font-size:20px;
   }
@@ -294,10 +306,14 @@ main{
   }
   .home-button-div{
     width:280px;
+    margin-top: 20px;
   .button{
     font-size: 16px;
     width:80px;
   }
+}
+.right-links-div {
+  gap:4px;
 }
 }
 @media(max-width:360px){
@@ -311,7 +327,7 @@ main{
     width:260px;
   .button{
     font-size: 14px;
-    padding: 12px 18px;
+    padding: 10px 18px;
   }
 }
 }
