@@ -77,7 +77,7 @@
         <div class="nr">0{{currentProject.nr}}</div>
         <h1 class="project-name">{{currentProject.name}}</h1>
         <h3>{{ 'FEATURED_PROJECTS.Overlay.Title' | translate }}</h3>
-        <p class="description">{{currentProject.description}}</p>
+        <p class="description">{{currentProject.description | translate}}</p>
         <div class="technologie-div">
           <div class="tech-div" *ngFor="let techKey of currentProject.technologies">
             <div class="technologie">

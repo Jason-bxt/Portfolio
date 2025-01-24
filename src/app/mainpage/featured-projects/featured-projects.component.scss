@@ -11,7 +11,7 @@ main {
   justify-content: center;
   width: 100%;
   max-width: 1920px;
-      margin-top: 120px;
+  margin-top: 120px;
   h5 {
     color: #3dcfb6;
     font-family: "karla";
@@ -192,7 +192,9 @@ main {
   .overlay {
     display: flex;
     position: fixed;
-    top: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 60vh;
     width: 80vw;
     border: solid 1px #3dcfb6;

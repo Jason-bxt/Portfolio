@@ -7,6 +7,7 @@ main {
   justify-content: space-between;
   overflow-y: auto;
   max-width: 1920px;
+  background-color: #1c1c1c;
 }
 
 header {
@@ -16,6 +17,7 @@ header {
 h1 {
   font-size: 61px;
   font-weight: 700;
+  color:white;
 }
 
 ::-webkit-scrollbar {
@@ -27,6 +29,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color:white;
 }
 
 .backButton {
@@ -34,6 +37,7 @@ h1 {
   height: 32px;
   width: 32px;
   border-radius: 50%;
+  color:white;
 }
 
 .menuLink {
@@ -51,22 +55,25 @@ h1 {
 
 .backButton:hover {
   cursor: pointer;
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(0, 0, 0);
 }
 
 h3 {
   font-size: 27px;
   font-weight: 700;
+  color:white;
 }
 
 ul {
   font-size: 16px;
   font-weight: 400;
+  color:white;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
+  color:white;
 }
 
 .content {

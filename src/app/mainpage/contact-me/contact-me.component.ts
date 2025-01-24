@@ -22,6 +22,7 @@ export class ContactMeComponent {
   }
 
   termsAccepted: boolean = false;
+  submitted: boolean = false;
 
   post = {
     endPoint: 'https://jason-peters.de/sendMail.php',
@@ -35,7 +36,7 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-
+    this.submitted = true;
     if (ngForm.valid && this.termsAccepted) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({

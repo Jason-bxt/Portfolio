@@ -23,19 +23,16 @@ export class FeaturedProjectsComponent implements OnInit {
 
   ngOnInit() {
     this.loadProjects();
+    
   }
 
   loadProjects() {
-    this.translate.get([
-      'FEATURED_PROJECTS.Overlay.DescriptionOne',
-      'FEATURED_PROJECTS.Overlay.DescriptionTwo',
-      'FEATURED_PROJECTS.Overlay.DescriptionThree',
-    ]).subscribe((translations) => {
+
       this.overlayProjects = [
         {
           nr: 1,
           name: 'Join',
-          description: translations['FEATURED_PROJECTS.Overlay.DescriptionOne'], 
+          description:'FEATURED_PROJECTS.Overlay.DescriptionOne', 
           img: './assets/img/join.png',
           test: './assets/Join/index.html',
           git: 'https://github.com/Jason-bxt/Join',
@@ -51,7 +48,7 @@ export class FeaturedProjectsComponent implements OnInit {
       {
         nr: 2,
         name: 'El Pollo Loco',
-        description: translations['FEATURED_PROJECTS.Overlay.DescriptionTwo'],
+        description: 'FEATURED_PROJECTS.Overlay.DescriptionTwo',
         img: './assets/img/el-pollo-loco.png',
         test: './assets/El-pollo-loco/index.html',
         git: './assets/Pokedex/index.html',
@@ -64,7 +61,7 @@ export class FeaturedProjectsComponent implements OnInit {
       {
         nr: 3,
         name: 'PokeDex',
-        description: translations['FEATURED_PROJECTS.Overlay.DescriptionThree'],
+        description:'FEATURED_PROJECTS.Overlay.DescriptionThree',
         img: './assets/img/pokedex.png',
         test: 'https://github.com/Jason-bxt/PokeDex',
         git: 'https://github.com/Jason-bxt/Jump-and-Run-Game---EL-Pollo-Loco',
@@ -76,7 +73,6 @@ export class FeaturedProjectsComponent implements OnInit {
         ],
       },
     ];
-  });
 }
   
   toggleOverlay(index: number = -1) {

@@ -19,7 +19,7 @@
         <div>
           <p>{{ 'CONTACT_ME.Contact.InputOne' | translate }}</p>
           <input #name="ngModel" [(ngModel)]="contactData.name" type="text" name="name" placeholder="{{ 'CONTACT_ME.Contact.PlaceholderOne' | translate }}" required>
-          @if(!name.valid && name.touched){
+          @if(!name.valid && name.touched && submitted){
             <span class="contact-error">{{ 'CONTACT_ME.Contact.PlaceholderOne' | translate }}</span>
           }
         </div>
@@ -27,7 +27,7 @@
         <div>
           <p>{{ 'CONTACT_ME.Contact.InputTwo' | translate }}</p>
           <input #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email" placeholder="{{ 'CONTACT_ME.Contact.PlaceholderTwo' | translate }}"  required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
-          @if(!email.valid && name.touched){
+          @if(!email.valid && name.touched && submitted){
             <span class="contact-error">{{ 'CONTACT_ME.Contact.PlaceholderTwo' | translate }}</span>
           }
         </div>
@@ -35,7 +35,7 @@
         <div>
           <p>{{ 'CONTACT_ME.Contact.InputThree' | translate }}</p>
           <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" placeholder="{{ 'CONTACT_ME.Contact.PlaceholderThree' | translate }}"  required></textarea>
-          @if(!message.valid && name.touched){
+          @if(!message.valid && name.touched && submitted){
             <span class="contact-error">{{ 'CONTACT_ME.Contact.PlaceholderThree' | translate }}</span>
           }
         </div>
